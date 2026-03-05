@@ -19,7 +19,6 @@ def extraire_date(fichier):
 
 
 # Extraction du titre
-from bs4 import BeautifulSoup
 
 def extraire_titre(fichier):
 
@@ -39,7 +38,6 @@ def extraire_titre(fichier):
 
 
 #Extraction du numéro du bulletin
-from bs4 import BeautifulSoup
 
 def extraire_numéroBul(fichier):
 
@@ -61,7 +59,6 @@ def extraire_numéroBul(fichier):
 
 
 #Extraction du numéro de l'article
-from bs4 import BeautifulSoup
 
 def extraire_numéroArticle(fichier):
     un = fichier.replace(".htm","")
@@ -71,7 +68,6 @@ def extraire_numéroArticle(fichier):
 
 
 #Partie XML pour un fichier
-from bs4 import BeautifulSoup
 
 def formationxml(fichier):
     date=extraire_date(fichier)
