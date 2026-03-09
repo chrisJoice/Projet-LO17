@@ -67,6 +67,23 @@ def extraire_numéroArticle(fichier):
     return numeroArticle
 
 
+def recuperation_rubrique(fichier):
+    # obtenir le code html de la page
+    with open(fichier, "r", encoding = "UTF8") as f :
+        html = f.read()
+
+    # cree un objet beautifulSoup en transmettant le code html à la fonction BeautifulSoup()
+    soup = BeautifulSoup(html, 'html.parser' )
+    type(soup)
+
+    # récuperer l'element 
+
+    racine = soup.body.div.table
+    all_span = racine.find_all("span")
+    span = all_span[45]
+    resultat = span.get_text()
+    return resultat
+
 #Partie XML pour un fichier
 
 def formationxml(fichier):
@@ -74,12 +91,14 @@ def formationxml(fichier):
     numéroBul=extraire_numéroBul(fichier)
     numéroArticle=extraire_numéroArticle(fichier)
     titre = extraire_titre(fichier)
+    rubrique = recuperation_rubrique(fichier)
     
     xml = "<document>\n"
     xml += "<date>" + date + "</date>\n"
     xml += "<bulletin>" + numéroBul + "</bulletin>\n"
     xml += "<bulletin>" + numéroArticle + "</bulletin>\n"
     xml += "<titre>" + titre + "</titre>\n"
+    xml += "<rubrique>" + rubrique + "</titre>\n"
     xml += "</document>\n"
 
     return xml
