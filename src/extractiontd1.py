@@ -1,6 +1,9 @@
-# Extraction de la date
+# import
 from bs4 import BeautifulSoup
+from pathlib import Path
+import os
 
+# Extraction de la date
 def extraire_date(fichier):
 
     with open(fichier, "r", encoding="utf8") as f:
@@ -61,7 +64,7 @@ def extraire_numéroBul(fichier):
 #Extraction du numéro de l'article
 
 def extraire_numéroArticle(fichier):
-    un = fichier.replace(".htm","")
+    un = fichier.stem
     numeroArticle = un.replace("BULLETINS/", "")
     
     return numeroArticle
@@ -255,28 +258,28 @@ def formationxml(fichier):
     return xml
 
 # Ecriture dans le corpus , pour l'ensemble des fichiers 
-import os
 
-xml = "<corpus>\n"
+BASE_DIR = Path(__file__).resolve().parent.parent
+BULLETINS = BASE_DIR / "BULLETINS"
+OUTPUT = BASE_DIR / "output"
 
-for fichier in os.listdir("BULLETINS"):
+def ecriture_corpus():
 
-    if fichier.endswith(".htm"):
+    xml = "<corpus>\n"
 
-        chemin = "BULLETINS/" + fichier
+    for fichier in BULLETINS.glob("*.htm"):
+        print("Traitement :", fichier)
 
-        doc = formationxml(chemin)
+        doc = formationxml(fichier)
 
         xml += doc
 
-xml += "</corpus>"
+    xml += "</corpus>"
 
-with open("corpus.xml", "w", encoding="utf8") as f:
-    f.write(xml)
+    with open(OUTPUT / "corpus.xml", "w", encoding="utf8") as f:
+        f.write(xml)
 
-
-
-
+    print("ok")
 
 
 
