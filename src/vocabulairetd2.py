@@ -244,7 +244,7 @@ def anti_dictionnaire(fichier, seuil_min , seuil_max):
     liste_finale = list(set(liste_semi_finale))
 
     # Ecriture dans le fichier 
-    export(DATA/"frequence_tftd.txt", 1, liste_finale)
+    export(DATA/"antidictionnaire.txt", 1, liste_finale)
 
 
 #################################################
@@ -276,7 +276,7 @@ def courbe_analytique(fichier, id_doc):
 # TESTES
 #################################################
 fichier = DATA / "tokens.txt"
-chemin = DATA/"corpus.xml"
+chemin = OUTPUT/"corpus.xml"
 segmente(chemin)
 frequenced_apparition(fichier)
 coefficients_idft(DATA/"frequence_tftd.txt")
