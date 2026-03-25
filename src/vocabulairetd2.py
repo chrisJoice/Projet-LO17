@@ -237,7 +237,7 @@ def anti_dictionnaire(fichier, seuil_min , seuil_max):
     for line in lines :
         coef = float(line.split()[3])
         token = line.split()[0]
-        if  coef < seuil_min and coef > seuil_max :
+        if  coef < seuil_min or coef > seuil_max :
             liste_semi_finale.append(token)
 
     # suppression de doublons 
