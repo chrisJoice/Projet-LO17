@@ -1,9 +1,30 @@
 # import
+
+# =========================
+# IMPORTS
+# =========================
+
 from bs4 import BeautifulSoup
 from pathlib import Path
 import os
 
-# Extraction de la date
+# =========================
+# CONFIGURATION DES CHEMINS
+# =========================
+try:
+    BASE_DIR = Path(__file__).resolve().parent.parent
+except NameError:
+    BASE_DIR = Path.cwd().parent
+
+BULLETINS = BASE_DIR / "BULLETINS"
+DATA = BASE_DIR / "data"
+OUTPUT = BASE_DIR / "output"
+
+
+
+# =========================
+# EXTRACTION DATE
+# =========================
 def extraire_date(fichier):
 
     with open(fichier, "r", encoding="utf8") as f:
@@ -19,9 +40,9 @@ def extraire_date(fichier):
 
     return date
 
-
-
-# Extraction du titre
+# =========================
+# EXTRACTION TITRE
+# =========================
 
 def extraire_titre(fichier):
 
@@ -39,8 +60,9 @@ def extraire_titre(fichier):
     return titre
 
 
-
-#Extraction du numéro du bulletin
+# =========================
+# EXTRACTION NUMERO BULLETIN
+# =========================
 
 def extraire_numéroBul(fichier):
 
@@ -60,8 +82,9 @@ def extraire_numéroBul(fichier):
     return numero_bulletin
 
 
-
-#Extraction du numéro de l'article
+# =========================
+# EXTRACTION NUMERO ARTICLE
+# =========================
 
 def extraire_numéroArticle(fichier):
     un = fichier.stem
@@ -69,8 +92,10 @@ def extraire_numéroArticle(fichier):
     
     return numeroArticle
 
-#Extraction du numéro de la rubrique
 
+# =========================
+# EXTRACTION RUBRIQUE
+# =========================
 def recuperation_rubrique(fichier):
     # obtenir le code html de la page
     with open(fichier, "r", encoding = "UTF8") as f :
@@ -89,8 +114,9 @@ def recuperation_rubrique(fichier):
     return resultat
 
 
-#Extraction du numéro de la rubrique
-
+# =========================
+# EXTRACTION TEXTE
+# =========================
 def recuperation_texte(fichier):
     try :
         # obtenir le code html de la page
@@ -122,8 +148,9 @@ def recuperation_texte(fichier):
         return None
     
 
-#Extraction du texte
-
+# =========================
+# EXTRACTION AUTEUR
+# =========================
 def recuperation_auteur(fichier):
     # obtenir le code html de la page
     with open(fichier, "r", encoding = "UTF8") as f :
@@ -159,8 +186,10 @@ def recuperation_auteur(fichier):
     print ("pas de ligne")
     return fichier
 
-#Extraction des images 
 
+# =========================
+# EXTRACTION IMAGES
+# =========================
 def recuperation_images(fichier):
 
     try :
@@ -190,7 +219,10 @@ def recuperation_images(fichier):
         return None
     
 
-# Extraction du contact
+# =========================
+# EXTRACTION CONTACT
+# =========================
+
 def recuperation_information_contact(fichier):
     try : 
         # obtenir le code html de la page
@@ -221,9 +253,10 @@ def recuperation_information_contact(fichier):
         print("fichier: ", fichier , "erreur: ", e)
         return None
 
-#Partie XML pour un fichier
 
-from bs4 import BeautifulSoup
+# =========================
+# FORMATION XML DOCUMENT
+# =========================
 
 def formationxml(fichier):
     date=extraire_date(fichier)
@@ -257,18 +290,16 @@ def formationxml(fichier):
 
     return xml
 
-# Ecriture dans le corpus , pour l'ensemble des fichiers 
 
-BASE_DIR = Path(__file__).resolve().parent.parent
-BULLETINS = BASE_DIR / "BULLETINS"
-OUTPUT = BASE_DIR / "output"
-
+# =========================
+# ECRITURE CORPUS XML
+# =========================
 def ecriture_corpus():
 
     xml = "<corpus>\n"
 
     for fichier in BULLETINS.glob("*.htm"):
-        print("Traitement :", fichier)
+        #print("Traitement :", fichier)
 
         doc = formationxml(fichier)
 
@@ -280,7 +311,3 @@ def ecriture_corpus():
         f.write(xml)
 
     print("ok")
-
-
-
-

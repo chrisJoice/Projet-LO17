@@ -9,6 +9,7 @@ import xml.etree.ElementTree as ET
 import os
 import re
 from pathlib import Path
+import math 
 
 
 #################################################
@@ -30,19 +31,20 @@ OUTPUT = BASE_DIR / "output"
 
 # export des résultats
 def export(file_name, nb_colonnes, liste_finale):
-    if nb_colonnes > 1 :
-        with open(file_name, "w") as f:
-            for element in liste_finale :
+    if nb_colonnes > 1:
+        with open(file_name, "w", encoding="utf8") as f:
+            for element in liste_finale:
                 line = ""
-                for i in range(nb_colonnes) :
-                    line = line + f"{element[i]} \t" 
-                line = line + " \n"
-                f.writelines(line)
-    if nb_colonnes == 1 :
-        with open(file_name, "w") as f:
-            for element in liste_finale :
-                line = f"{element} \t" 
-                f.writelines(line)
+                for i in range(nb_colonnes):
+                    line += f"{element[i]}\t"
+                line += "\n"
+                f.write(line)
+
+    elif nb_colonnes == 1:
+        with open(file_name, "w", encoding="utf8") as f:
+            for element in liste_finale:
+                line = f"{element}\n"
+                f.write(line)
 
 def segmente(corpus):
     with open(corpus , "r" , encoding="utf8") as c:
@@ -70,82 +72,74 @@ def segmente(corpus):
     export(DATA/"tokens.txt", 2, tokens)
 
 
-def frequenced_apparition(fichier):
+def frequence_apparition(fichier,output_file) :
 
-    # construction du dictionnaire de fichier  
-    dictionnaire = {}
-    with open(fichier, "r") as f:
-        for ligne in f:
-            ligne_element = ligne.split()
+    with open(fichier, "r", encoding="utf8") as f:
+            tf = {}
+            for ligne in f:
 
-            if not ligne_element:
-                continue
+                ligne = ligne.strip()           # enlever \n
 
-            if ligne_element[0] in dictionnaire:
-                dictionnaire[ligne_element[0]].append(ligne_element[1])
-            else:
-                dictionnaire[ligne_element[0]] = []
-                dictionnaire[ligne_element[0]].append(ligne_element[1])
-    print(dictionnaire)
-    # construction le la liste de liste contenant le id_document le token tftd
-    liste_tftd  = []
-    for dict in dictionnaire :
-        for token in dictionnaire[dict] :
-            tftd = dictionnaire[dict].count(token)
-            cle = [dict, token, tftd ]
-            if cle not in liste_tftd :
-                liste_tftd.append(cle)
+                parties = ligne.split("\t")     # séparer
 
-    # ecriture dans le fichier
-    export(DATA/"frequence_tftd.txt", 3, liste_tftd)
+                doc = parties[0]       
+                token = parties[1]
 
-def coefficients_idft(fichier):
-    # construciton d'un ditionnaire dont les elements au niveau 1 sont les mots .
-    # au niveau 2 on a une liste de id de documents dans les quelles on trouve ses mots 
-    # {'pomme': ['1'], 'chaise': ['2']}
-    dictionnaire = {}
-    liste_document = []
-    with open(fichier, "r") as f:
-        for ligne in f:
-            ligne_element = ligne.split()
+                cle = (doc, token)
 
-            if not ligne_element:
-                continue
+                if cle not in tf:
+                    tf[cle] = 1
+                else:
+                        tf[cle] = tf[cle] + 1
+    # export 
+    with open(output_file, "w", encoding="utf8") as f:
+        for (doc, token), freq in tf.items():
+            f.write(doc + "\t" + token + "\t" + str(freq) + "\n")
+    print(f"successful exportation of --> {output_file} --> ✅")
 
-            #construction de la liste de documents 
-            liste_document.append(ligne_element[0])
-
-            if ligne_element[1] in dictionnaire and ligne_element[0] not in dictionnaire[ligne_element[1]] :
-                dictionnaire[ligne_element[1]].append(ligne_element[0])
-            else:
-                dictionnaire[ligne_element[1]] = []
-                dictionnaire[ligne_element[1]].append(ligne_element[0])
-   
-        print(dictionnaire)
-    N  = len(list(set(liste_document)))
-    # construction le la liste de liste contenant le token idft
-    liste_idft  = []
-    for token in dictionnaire :
-        dft = len(dictionnaire[token])
-        idft = np.log10(N / dft)
-        cle = [ token , round(idft,4) ]
-        if cle not in liste_idft :
-            liste_idft.append(cle)
+def coefficients_idft(fichier,output_file) : 
     
-    # ecriture dans le fichier
-    export(DATA/"coeffecient_idft.txt", 2, liste_idft)
+    docs = set() # set permet de creer un ensemble d'éléments uniques(pas de doublons)
+    df = {}
+    idf = {}
+    with open(fichier, "r", encoding="utf8") as f: # lemme c'est l'expor de extraction spyci
+
+        for ligne in f:
+
+            doc, token = ligne.strip().split("\t") # on supprime le \n et on separe , doc contient l'identifiant et token le token
+
+            docs.add(doc) # on met les identifiants dans docs (sans les doublons) 
+
+            if token not in df:
+                df[token] = set()
+
+            df[token].add(doc)   
+
+    N = len(docs) 
+    for token in df:
+
+        dft = len(df[token])
+
+        idf[token] = math.log10(N / dft)
+
+    with open(output_file, "w", encoding="utf8") as f:
+        for token, valeur in idf.items():
+            f.write(token + "\t" + str(valeur) + "\n")
+
+    print(f"successful exportation of --> {output_file} --> ✅")
 
 
-def coefficients_tf_idft(file_idft, file_tftd): # fonction bryan
+def coefficients_tf_idft(file_idft, file_tftd, output_file): # fonction bryan
     # lecture des tf
     with open(DATA/file_idft, "r", encoding="utf8") as f:
-        lignes_tf = f.readlines()
+        lignes_idf = f.readlines()
 
     # lecture des idf
     with open(DATA/file_tftd, "r", encoding="utf8") as f:
-        lignes_idf = f.readlines()
+        lignes_tf = f.readlines()
 
     tfxidf = []
+    
     #  étape 1 : créer un dictionnaire des idf
     idf_dict = {}
 
@@ -171,7 +165,30 @@ def coefficients_tf_idft(file_idft, file_tftd): # fonction bryan
             if cle not in tfxidf :  # unicité bryan 
                 tfxidf.append(cle)
     # étape 3 : écriture dans le fichier
-    export(DATA/"fichier_tf_idft.txt", 3, tfxidf) # export bryan
+    export(output_file, 3, tfxidf) # export bryan
+    print(f"successful exportation of --> {output_file} --> ✅")
+
+# construction du nouvel anti dictionaire 
+def anti_dictionnaire(fichier, seuil_min , seuil_max, output_file): # fchier_tfxidf
+    with open(fichier, 'r', encoding="utf8") as f :
+        lines = f.readlines()
+    
+    # anti dictionnaire 
+    liste_semi_finale = []
+    for line in lines :
+        coef = float(line.split()[2])
+        token = line.split()[1]
+        if  coef < seuil_min or coef > seuil_max :
+            liste_semi_finale.append(token)
+
+    # suppression de doublons 
+    liste_finale = list(set(liste_semi_finale))
+
+    # Ecriture dans le fichier 
+    export(output_file, 1, liste_finale)
+
+    print(f"successful exportation of --> {output_file} --> ✅")
+
 
 def substitue(texte, fichier_substitution):
     subs = {}
@@ -197,8 +214,8 @@ def substitue(texte, fichier_substitution):
             resultat.append(mot)
 
     return " ".join(resultat)
-    
-def corpus_filtrer1(corpus,antidictionnaire):
+
+def corpus_filtrer(corpus,antidictionnaire,output_file):
     # Lire le corpus XML
     with open(OUTPUT/corpus, "r", encoding="utf8") as f:
         contenu = f.read()
@@ -220,31 +237,13 @@ def corpus_filtrer1(corpus,antidictionnaire):
             balise = doc.find(champ)
 
             if balise:
-                nouveau = substitue(balise.text, DATA/antidictionnaire) # j'ai mis antidictionnaire comme variable 
+                nouveau = substitue(balise.text,antidictionnaire )
                 balise.string = nouveau
 
     # Sauvegarder le nouveau corpus
-    with open(OUTPUT/"corpus_filtre.xml", "w", encoding="utf8") as f:
+    with open(output_file, "w", encoding="utf8") as f:
         f.write(str(soup))
-
-
-def anti_dictionnaire(fichier, seuil_min , seuil_max):
-    with open(fichier, 'r') as f :
-        lines = f.readlines()
-    
-    # anti dictionnaire 
-    liste_semi_finale = []
-    for line in lines :
-        coef = float(line.split()[3])
-        token = line.split()[0]
-        if  coef < seuil_min or coef > seuil_max :
-            liste_semi_finale.append(token)
-
-    # suppression de doublons 
-    liste_finale = list(set(liste_semi_finale))
-
-    # Ecriture dans le fichier 
-    export(DATA/"antidictionnaire.txt", 1, liste_finale)
+    print(f"successful exportation of --> {output_file} --> ✅")
 
 
 #################################################
@@ -275,12 +274,21 @@ def courbe_analytique(fichier, id_doc):
 #################################################
 # TESTES
 #################################################
-fichier = DATA / "tokens.txt"
-chemin = OUTPUT/"corpus.xml"
-segmente(chemin)
-frequenced_apparition(fichier)
-coefficients_idft(DATA/"frequence_tftd.txt")
-coefficients_tf_idft(DATA/"coeffecient_idft.txt", OUTPUT/"frequence_tftd.txt" )
-# testes de la courbe
-fichier = OUTPUT/"fichier_tf_idft.txt"
-courbe_analytique(fichier, 0)
+# fichier = DATA / "tokens.txt"
+# chemin = OUTPUT/"corpus.xml"
+# outpout_tf = DATA/"tf1.txt"
+# outpout_idf = DATA/"idf.txt"
+# outpout_tfxidf = DATA/"tfxidf.txt"
+# anti_dic = DATA/"antidictionnaire.txt"
+# c_filtrer = OUTPUT/"corpus_filtrer.xml"
+# seuil_min = 0.5
+# seuil_max = 25
+# segmente(chemin)
+# frequence_apparition(fichier,outpout_tf)
+# coefficients_idft(fichier,outpout_idf)
+# coefficients_tf_idft(outpout_idf, outpout_tf, outpout_tfxidf )
+# anti_dictionnaire(outpout_tfxidf,seuil_min, seuil_max,anti_dic  )
+# corpus_filtrer(chemin, anti_dic, c_filtrer)
+# # testes de la courbe
+# fichier = OUTPUT/"fichier_tf_idft.txt"
+# courbe_analytique(fichier, 0)
