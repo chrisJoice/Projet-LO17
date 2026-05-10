@@ -81,7 +81,7 @@ def construire_requete(structure):
     mots = structure['mots_cles']
     operateur = structure['operateur'][0].upper() if len(structure['operateur']) > 0 else ['ET']
     exclus = structure.get('exclus', [])
-    sep = " OR " if operateur == "OU" else " AND "
+    sep = " AND " if operateur == "AND" else " OR "
     base = sep.join(mots)
     requete = base
     if exclus:
@@ -129,7 +129,7 @@ def executer_requete(requete, index):
 
     if not docs_inclus:
         return {}
-    print ("\tdocs_inclus -->", docs_inclus )
+    # print ("\tdocs_inclus -->", docs_inclus )
     # AND / OR
     if operateur == "AND":
         docs_final = set.intersection(*docs_inclus)
@@ -180,10 +180,10 @@ def intersection_multiple(dicts):
 # MOTEUR DE RECHERCHE
 # =========================
 
-def moteur():
+def moteur(requete):
 
     # traitement de la requete 
-    structure = traitement_requete.traitement_requete()
+    structure = traitement_requete.traitement_requete(requete)
 
     # recupération des fichier inverse 
     inverse_date = charger_index(DATA/"inverse_date.txt")
@@ -209,13 +209,12 @@ def moteur():
                     docs_date[doc] = freq
         print("filtre date ok ✅ ")
     # 2. filtre rubrique (hyphothèse il y a une seul rubrique dans la requette )
-    if inverse_rubrique :
-        for cle in inverse_rubrique :
-            for mot in structure['rubrique'] :
-                if mot == cle :
-                    for doc, freq in list(inverse_rubrique[cle].items()) : 
-                        docs_rubrique[doc] = freq
-        print("filtre rubrique ok ✅ ")
+    if inverse_rubrique:
+        for cle in inverse_rubrique:
+            if structure['rubrique'] and structure['rubrique'].lower() == cle.lower():
+                for doc, freq in list(inverse_rubrique[cle].items()):
+                    docs_rubrique[doc] = freq
+    print("filtre rubrique ok ✅ ")
     # 3. filtre texte
     if inverse_texte :
         req = construire_requete(structure)
@@ -226,17 +225,29 @@ def moteur():
         req = construire_requete(structure)
         docs_titre = executer_requete(req,inverse_titre)
         print("filtre titre ok ✅ ")
-        
-    # on recupère les dictionnaires non vide 
-    liste_docs = [d for d in [docs_date, docs_rubrique, docs_texte, docs_titre] if d]
-    resultat_final = intersection_multiple(liste_docs)
+
+    # filtres durs (date et rubrique) → intersection stricte
+    filtres_durs = [d for d in [docs_date, docs_rubrique] if d]
+    if filtres_durs:
+        docs_autorises = set.intersection(*[set(d.keys()) for d in filtres_durs])
+    else:
+        docs_autorises = None
+
+    # score = texte + bonus titre (titre vaut double car plus significatif)
+    resultat_final = {}
+    for doc in set(docs_texte) | set(docs_titre):
+        if docs_autorises and doc not in docs_autorises:
+            continue
+        score = docs_texte.get(doc, 0) + 2 * docs_titre.get(doc, 0)
+        if score > 0:
+            resultat_final[doc] = score
 
     # classe par ordre décroissant 
     resultat_final = dict(sorted(resultat_final.items(), key=lambda x: x[1], reverse=True))
     
     # affichage des resultats 
     print("documents chercher ---> ✅  ")
-    print("\t ## ",resultat_final)
+
     return resultat_final
 
 
@@ -244,5 +255,5 @@ def moteur():
 # EXECUTION
 # =========================
                 
-while 1 :
-    resultat = moteur()
+# while 1 :
+#     resultat = moteur()

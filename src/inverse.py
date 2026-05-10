@@ -78,8 +78,9 @@ def fichier_inverse(corpus, balise):
 
 
 # ## test
-corpus = OUTPUT /"corpus.xml"
-fichier_inverse(corpus, "date")
-fichier_inverse(corpus, "titre")
-fichier_inverse(corpus, "rubrique")
-fichier_inverse(corpus, "texte")
+def execution():
+    corpus = OUTPUT /"corpus_final.xml"
+    fichier_inverse(corpus, "date")
+    fichier_inverse(corpus, "titre")
+    fichier_inverse(corpus, "rubrique")
+    fichier_inverse(corpus, "texte")

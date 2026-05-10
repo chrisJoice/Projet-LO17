@@ -18,11 +18,10 @@ OUTPUT = BASE_DIR / "output"
 # CHARGEMENT DU LEXIQUE
 # =========================
 
-def charger_lexique(fichier_lemme, antidictionnaire):
+def charger_lexique(fichier_lemme):
     # le lexique ne comprte que les mots qui nous interesses 
 
     mots = set()        # lexique principal
-    anti_dict = set()   # mots à exclure
 
     # lecture du lexique
     with open(fichier_lemme, "r", encoding="utf8") as f:
@@ -30,20 +29,14 @@ def charger_lexique(fichier_lemme, antidictionnaire):
             _, lemme = ligne.strip().split("\t")
             mots.add(lemme)
 
-    # lecture de l'antidictionnaire
-    with open(antidictionnaire, "r", encoding="utf8") as f:
-        for ligne in f:
-            mot = ligne.strip()  # chaque ligne = un mot
-            anti_dict.add(mot)
-
     # différence ensembliste
-    return mots - anti_dict
+    return mots 
 
 
 # ==========================================
 # ANALYSE DE LA REQUETE (TOKEN + LEMME)
 # ==========================================
-def analyser_requete(requete, nlp):    # nlp = modèle spacy
+def analyser_requete(requete : str , nlp):    # nlp = modèle spacy
 
     doc = nlp(requete)  # transformation en objet spaCy
 
@@ -90,10 +83,10 @@ def distance_levenshtein(a, b):
 # =========================
 # CORRECTION D'UN MOT
 # =========================
-def corriger_mot(mot, lexique):
+def corriger_mot(mot , lexique):
 
     # a) nombre → pas de correction
-    if mot.isdigit():
+    if   mot.isdigit() : #nlp(mot)[0].like_num : #    # mot.like_num: 1er deuxième 1 2 2005 
         return mot
 
     # b) mot déjà correct
@@ -104,7 +97,7 @@ def corriger_mot(mot, lexique):
     candidats = []
 
     for mot_lex in lexique:
-        if mot_lex.startswith(mot[:2]):  # filtre rapide
+        if mot_lex.startswith(mot[:2] if len(mot) >= 2 else mot):  # filtre rapide
             candidats.append(mot_lex)
 
     # f) aucun candidat
@@ -124,9 +117,9 @@ def corriger_mot(mot, lexique):
 # =========================
 # CORRECTION DE LA REQUETE
 # =========================
-def corriger_requete(requete, lexique, nlp): 
+def corriger_requete(requete : str , lexique , nlp): 
     
-    tokens = analyser_requete(requete, nlp)
+    tokens = analyser_requete(requete , nlp)
 
     resultat = []
 
@@ -143,10 +136,10 @@ def corriger_requete(requete, lexique, nlp):
 
 # nlp = spacy.load("fr_core_news_sm")
 
-# lexique = charger_lexique(DATA/"lemmes.txt",DATA/"antidictionnaire_new.txt")
+# lexique = charger_lexique(DATA/"lemmes.txt")
 
 # while 1 :
-#     print("______________________________________________\n")
+#     print("\n______________________________________________")
 #     requete = input("Tape ta requête : ")
 #     resultat = corriger_requete(requete, lexique, nlp)
 #     print("Correction : ", " ".join(resultat))

@@ -120,13 +120,14 @@ def extraction_spacy(fichier):
                 # Fusion des contenus --> on obtient une chaine de caractère qui correspond a input de nlp
                 texte_document = " ".join(texte + titre + rubrique)
 
-                # Traitement spaCy
+                                # Traitement spaCy
                 doc = nlp(texte_document)
 
                 for token in doc:
-                    cle = [article, token.lemma_]
-                    liste_finale.append(cle)
-
+                    if  token.is_alpha:
+                        cle = [article, token.lemma_]
+                        liste_finale.append(cle)
+       
             except Exception as e:
                 print(f"Erreur sur un document : {e}")
                 continue
@@ -134,7 +135,7 @@ def extraction_spacy(fichier):
         # Export
         try:
             
-            export(DATA / "lemme.txt", 2, liste_finale)
+            export(DATA / "lemmes.txt", 2, liste_finale)
         except Exception as e:
             print(f"Erreur lors de l'export : {e}")
 
@@ -150,7 +151,7 @@ def extraction_spacy(fichier):
 def extraction_snowball(fichier):
     try : 
         # obtenir le code html de la page
-        with open(fichier, "r", encoding = "UTF8") as f :
+        with open(fichier, "r", encoding = "utf-8") as f :
             html = f.read()
 
         # cree un objet beautifulSoup en transmettant le code html à la fonction BeautifulSoup()
@@ -209,6 +210,7 @@ def extraction_snowball(fichier):
         print(fichier)
 
 
+
 # =========================
 # ANALYSE DES RESULTATS
 # =========================
@@ -248,8 +250,6 @@ def analyse(fichier, methode):
     print("distribution : -------------")
 
 
-# # Affinage de l’anti-dictionnaire
-
 # =========================
 # CONSTRUCTION CORPUS FINAL
 # =========================
@@ -258,7 +258,7 @@ def construire_corpusfinal(fichier_corpusfiltré , fichier_newantidictionnaire ,
 
     nlp = spacy.load("fr_core_news_sm")
 
-    with open(fichier_corpusfiltré, "r", encoding="utf8") as f:
+    with open(fichier_corpusfiltré, "r", encoding="utf-8") as f:
         contenu = f.read()
 
     soup = BeautifulSoup(contenu, "html.parser")
@@ -283,9 +283,9 @@ def construire_corpusfinal(fichier_corpusfiltré , fichier_newantidictionnaire ,
                 #remplacer dans XML
                 balise.string = nouveau
                 
-    with open(fichier_corpusfinal, "w", encoding="utf8") as f:
+    with open(fichier_corpusfinal, "w", encoding="utf-8") as f:
         f.write(str(soup))
-    print("corpus filtrer --> ✅")
+    print(f"successful exportation --> {fichier_corpusfinal} --> ✅")
 
 
 # # Inverse
@@ -314,7 +314,7 @@ def export_index(dictionnaire, fichier):
 def fichier_inverse(corpus, balise):
     try : 
         # obtenir le code html de la page
-        with open(corpus, "r", encoding = "UTF8") as f :
+        with open(corpus, "r", encoding = "utf-8") as f :
             html = f.read()
 
         # cree un objet beautifulSoup en transmettant le code html à la fonction BeautifulSoup()
@@ -346,23 +346,26 @@ def fichier_inverse(corpus, balise):
         print("erreur : ", e)
 
 # ## test
-outpout_tf = DATA/"tf1_new.txt"
-outpout_idf = DATA/"idf_new.txt"
-outpout_tfxidf = DATA/"tfxidf_new.txt"
-extraction_spacy(OUTPUT/"corpus_filtre.xml")
-extraction_snowball(OUTPUT/"corpus_filtre.xml")
-fichier = DATA/"lemmes.txt"
-vocabulairetd2.frequence_apparition(fichier,outpout_tf)
-vocabulairetd2.coefficients_idft(fichier,outpout_idf)
-vocabulairetd2.coefficients_tf_idft(outpout_idf, outpout_tf,outpout_tfxidf )
-fichier_tfxidf = DATA/"tfxidf_new.txt"
-new_antidictionnaire = DATA/"new_antidictionnaire.txt"
-seuil_min = 0.75
-seuil_max = 25
-vocabulairetd2.anti_dictionnaire(fichier_tfxidf, seuil_min, seuil_max, new_antidictionnaire)
-corpus_filtrer = OUTPUT/"corpus_filtre.xml"
-corpus_final = OUTPUT/"corpus_final.xml"
-construire_corpusfinal(corpus_filtrer, new_antidictionnaire,corpus_final)
+
+def execution() :
+    output_tf = DATA/"tf1_new.txt"
+    output_idf = DATA/"idf_new.txt"
+    output_tfxidf = DATA/"tfxidf_new.txt"
+
+    extraction_spacy(OUTPUT/"corpus_filtrer.xml")
+    extraction_snowball(OUTPUT/"corpus_filtrer.xml")
+    fichier = DATA/"lemmes.txt"
+    vocabulairetd2.frequence_apparition(fichier,output_tf)
+    vocabulairetd2.coefficients_idft(fichier,output_idf)
+    vocabulairetd2.coefficients_tf_idft(output_idf, output_tf,output_tfxidf )
+    new_antidictionnaire = DATA/"new_antidictionnaire.txt"
+    seuil_min = 0.75
+    seuil_max = 25
+    seuil_min, seuil_max = vocabulairetd2.determination_seuils(output_tfxidf, seuil_min, seuil_max, True)
+    vocabulairetd2.anti_dictionnaire(output_tfxidf, seuil_min, seuil_max, new_antidictionnaire)
+    corpus_filtrer = OUTPUT/"corpus_filtrer.xml"
+    corpus_final = OUTPUT/"corpus_final.xml"
+    construire_corpusfinal(corpus_filtrer, new_antidictionnaire,corpus_final)
 
 
 

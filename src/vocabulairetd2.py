@@ -170,6 +170,7 @@ def coefficients_tf_idft(file_idft, file_tftd, output_file): # fonction bryan
 
 # construction du nouvel anti dictionaire 
 def anti_dictionnaire(fichier, seuil_min , seuil_max, output_file): # fchier_tfxidf
+    print(seuil_min, seuil_max)
     with open(fichier, 'r', encoding="utf8") as f :
         lines = f.readlines()
     
@@ -246,49 +247,87 @@ def corpus_filtrer(corpus,antidictionnaire,output_file):
     print(f"successful exportation of --> {output_file} --> ✅")
 
 
-#################################################
-# FONCTIONS DE TRAITEMENT DE FICHIER
-#################################################
-def courbe_analytique(fichier, id_doc):
-    with open(fichier, 'r') as f :
-        lines = f.readlines()
-    # frequence vas collecter collecter les données
-    frequence = {}
+# =========================
+# DETERMINATION DES SEUILS
+# =========================
 
-    # le id document c'est pour specifier le document dont on cherche les mots
-    if id_doc == 0 :
-        for line in lines :
-            if float(line.split()[2]) > 20 :
-                frequence[line.split()[0]] = float(line.split()[2])
-    if id_doc != 0 :
-        for line in lines :
-            if int(line.split()[1]) == id_doc :
-                frequence[line.split()[0]] = float(line.split()[2])
-        
-    plt.bar(frequence.keys(), frequence.values())
-    print("taille :", len(frequence))
-    print(frequence)
-    plt.show()
+def determination_seuils(fichier_tfxidf, seuil_min,seuil_max,  courbe = False ):
+
+    #" je récupère les mots et les tfxidf"
+    dict_tfxidf = {}
+    with open(fichier_tfxidf, "r", encoding="utf-8") as f :
+        for line in f :
+            element = line.strip().split()
+            dict_tfxidf[element[1]] = float(element[2])
+
+    # je range par ordre decroissant de tfxidf
+    dict_tfxidf = dict(sorted(dict_tfxidf.items(), key=lambda x: x[1], reverse=True)) 
+
+    # je remplie mes liste pour mon graphe 
+    rangs = []
+    scores = []
+    for index, (mot, score ) in enumerate(dict_tfxidf.items()) :
+        rangs.append(index)
+        scores.append(score)
+    
+    plt.plot(rangs, scores)
+
+    plt.xlabel("rangs des mots")
+    plt.ylabel("TF-IDF")
+    plt.title("DISTRIBUTION DES MOTS PAR SCORE DE TF-IDF")
+
+    # determination automatique des seuil
+    # seuil_min = np.percentile(scores, pourcentage) # seuil en desous duquel on trouve 5 % des mots de tf-idf les plus faible 
+    # seuil_max = np.percentile(scores, 100-pourcentage) # seuil au dessus duquel on trouve 5 % des mots de tf-idf les plus elevés
+
+    # affichage des seuil sur le graphe 
+    plt.axhline(y = seuil_min ,color = "red", label = "Seuil min")
+    plt.axhline(y = seuil_max ,color = "green" ,label = "Seuil max")
+
+        # comptages
+    # nb_inf_min = sum(s < seuil_min for s in scores)
+
+    # nb_entre = sum(seuil_min <= s <= seuil_max for s in scores)
+
+    # nb_sup_max = sum(s > seuil_max for s in scores)
+
+    # nb_total = len(scores)
+
+    # print("seuil min :", seuil_min)
+    # print("seuil max :", seuil_max)
+
+    # print("inférieur min :", nb_inf_min)
+    # print("entre min/max :", nb_entre)
+    # print("supérieur max :", nb_sup_max)
+    # print("total :", nb_total)
+
+    # affichage 
+    if courbe == True :
+        plt.grid()
+        plt.legend()
+        plt.show()
+
+    return seuil_min, seuil_max
 
 
 #################################################
 # TESTES
 #################################################
-# fichier = DATA / "tokens.txt"
-# chemin = OUTPUT/"corpus.xml"
-# outpout_tf = DATA/"tf1.txt"
-# outpout_idf = DATA/"idf.txt"
-# outpout_tfxidf = DATA/"tfxidf.txt"
-# anti_dic = DATA/"antidictionnaire.txt"
-# c_filtrer = OUTPUT/"corpus_filtrer.xml"
-# seuil_min = 0.5
-# seuil_max = 25
-# segmente(chemin)
-# frequence_apparition(fichier,outpout_tf)
-# coefficients_idft(fichier,outpout_idf)
-# coefficients_tf_idft(outpout_idf, outpout_tf, outpout_tfxidf )
-# anti_dictionnaire(outpout_tfxidf,seuil_min, seuil_max,anti_dic  )
-# corpus_filtrer(chemin, anti_dic, c_filtrer)
-# # testes de la courbe
-# fichier = OUTPUT/"fichier_tf_idft.txt"
-# courbe_analytique(fichier, 0)
+
+def execution():
+    fichier = DATA / "tokens.txt"
+    chemin = OUTPUT/"corpus.xml"
+    output_tf = DATA/"tf1.txt"
+    output_idf = DATA/"idf.txt"
+    output_tfxidf = DATA/"tfxidf.txt"
+    anti_dic = DATA/"antidictionnaire.txt"
+    c_filtrer = OUTPUT/"corpus_filtrer.xml"
+    segmente(chemin)
+    frequence_apparition(fichier,output_tf)
+    coefficients_idft(fichier,output_idf)
+    coefficients_tf_idft(output_idf, output_tf, output_tfxidf )
+    seuil_min,seuil_max = 0.75, 25 
+    seuil_min, seuil_max = determination_seuils(output_tfxidf, seuil_min, seuil_max, True)
+    anti_dictionnaire(output_tfxidf,seuil_min, seuil_max,anti_dic  )
+    corpus_filtrer(chemin, anti_dic, c_filtrer)
+
