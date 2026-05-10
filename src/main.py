@@ -1,3 +1,4 @@
-import extractiontd1
+import execution
 
-extractiontd1.ecriture_corpus()
+execution.contruction_fichiers()
+execution.interface_terminal()

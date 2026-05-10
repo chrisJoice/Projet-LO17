@@ -175,5 +175,4 @@ def interface_terminal():
 
         affichage_resultats(infos_documents)
 
-contruction_fichiers()
-interface_terminal()
+
