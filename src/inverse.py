@@ -31,6 +31,7 @@ OUTPUT = BASE_DIR / "output"
 NORMALISATION_RUBRIQUES  = {
     "actualité innovation"  : "actualités innovations",
     "actualités innovation" : "actualités innovations",
+    "actualité-innovation"   : "actualités innovations",
     "horizon enseignement"  : "horizons enseignement",
     "horizon formation"     : "horizons formation",
     "en direct des labos"   : "en direct des laboratoires",
@@ -131,4 +132,4 @@ def execution():
     fichier_inverse_rubrique(corpus)
     fichier_inverse(corpus, "texte")
 
-fichier_inverse_rubrique(OUTPUT /"corpus_final.xml")
+# fichier_inverse_rubrique(OUTPUT /"corpus_final.xml")

@@ -73,7 +73,7 @@ def extraction_metadonnees(requete):
     metadonnees['dates'] = resultat_date[0] if resultat_date else ""
 
     # RUBRIQUE
-    pattern_rubrique = r"(focus|horizons enseignement|en direct des laboratoires|a lire|actualité innovations|actualités innovations|événement)"
+    pattern_rubrique = r"(du côté des pôles|au coeur des régions|horizons formation enseignement|focus|horizons enseignement|en direct des laboratoires|a lire|actualités innovations|événement|horizons formation)"
     resultat_rubrique = re.findall(pattern_rubrique, requete, re.IGNORECASE)
     rubrique_brute = resultat_rubrique[0].strip().lower() if resultat_rubrique else ""
     metadonnees['rubrique'] = NORMALISATION_RUBRIQUES .get(rubrique_brute, rubrique_brute)
@@ -287,7 +287,7 @@ def recuperation_mot_cles(mots_restant  : list , antidictionnaire : str) :
 
     # recuperation de l'anti-dictionnaire 
     anti_mots = set()
-    anti_mots.update(["article","leb","led","trouver", "traiter","rustique","retourner","titre","suer", "end","un","contenir","mot","quiz", 'je',"lem","tsv","ler","veux", "doit", "quel", "dam", "der","del", "quid", '[inconnu]',"souhaiter", "vouloir", "parler", "afficher", "cherche", "traitant", "donner"])
+    anti_mots.update(["article","leb","led","trouver", "porter","traiter","rustique","retourner","titre","suer", "end","un","contenir","mot","quiz", 'je',"lem","tsv","ler","veux", "doit", "quel", "dam", "der","del", "quid", '[inconnu]',"souhaiter", "vouloir", "parler", "afficher", "cherche", "traitant", "donner"])
     with open( antidictionnaire, "r", encoding="utf8" ) as f:
         for line in f :
             x = line.split()
