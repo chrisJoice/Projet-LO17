@@ -117,10 +117,6 @@ def affichage_resultats(infos_documents):
 
 def interface_terminal():
 
-    print("=" * 50)
-    print("MOTEUR DE RECHERCHE LO17")
-    print("=" * 50)
-
     corpus = OUTPUT / "corpus.xml"
 
     while True:
