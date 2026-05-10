@@ -286,7 +286,7 @@
 67068	impérativement	1
 67068	préserver	1
 67068	conclure	1
-67068	focus	1
+67068	Focus	1
 67071	allenvi	6
 67071	alliance	3
 67071	national	4
@@ -442,6 +442,7 @@
 67071	muséum	1
 67071	histoire	1
 67071	actualité	1
+67071	innovation	1
 67383	avril	1
 67383	décerné	1
 67383	médaill	2
@@ -623,7 +624,7 @@
 67383	recette	1
 67383	selon	1
 67383	récompense	1
-67383	focus	1
+67383	Focus	1
 67385	utiliser	4
 67385	digestion	2
 67385	micro	8
@@ -751,6 +752,7 @@
 67385	réutiliser	1
 67385	absorber	1
 67385	actualité	1
+67385	innovation	1
 67386	réseau	3
 67386	fil	3
 67386	concept	1
@@ -881,6 +883,7 @@
 67386	moindre	1
 67386	coût	1
 67386	actualité	1
+67386	innovation	1
 67387	caractéristique	3
 67387	structural	1
 67387	physiologique	1
@@ -1012,6 +1015,7 @@
 67387	réel	1
 67387	service	1
 67387	actualité	1
+67387	innovation	1
 67388	exister	4
 67388	enzyme	7
 67388	protéolytique	1
@@ -1227,6 +1231,7 @@
 67388	franc	1
 67388	comté	1
 67388	mamiroll	1
+67388	de	2
 67388	côté	1
 67388	pôle	1
 67389	individu	2
@@ -1372,7 +1377,9 @@
 67389	apprentissage	1
 67389	rapide	1
 67389	lieux	1
+67389	en	1
 67389	direct	1
+67389	de	1
 67389	laboratoire	1
 67390	contrôler	3
 67390	taille	6
@@ -1515,7 +1522,9 @@
 67390	nanotechnologies	1
 67390	nanotuber	1
 67390	parfaitement	1
+67390	en	1
 67390	direct	1
+67390	de	1
 67390	laboratoire	1
 67391	palmier	7
 67391	huile	5
@@ -1611,7 +1620,9 @@
 67391	identification	1
 67391	doper	1
 67391	palme	1
+67391	en	1
 67391	direct	1
+67391	de	1
 67391	laboratoire	1
 67392	septembre	1
 67392	montpellier	1
@@ -1929,7 +1940,7 @@
 67553	naître	1
 67553	esprit	1
 67553	démontrer	1
-67553	focus	1
+67553	Focus	1
 67554	appareil	1
 67554	peupler	1
 67554	quotidien	1
@@ -2177,7 +2188,7 @@
 67554	groupe	1
 67554	ligne	1
 67554	européen	1
-67554	focus	1
+67554	Focus	1
 67555	avril	1
 67555	dernier	1
 67555	habeat	5
@@ -2432,7 +2443,7 @@
 67555	financer	1
 67555	attendre	1
 67555	prometteur	1
-67555	focus	1
+67555	Focus	1
 67556	déficience	3
 67556	intellectuel	5
 67556	di	6
@@ -2590,6 +2601,7 @@
 67556	faveur	1
 67556	découverte	1
 67556	actualité	1
+67556	innovation	1
 67557	traditionnel	1
 67557	réfrigérateur	3
 67557	reste	1
@@ -2617,7 +2629,7 @@
 67557	frisbee	3
 67557	food	1
 67557	refrigeration	1
-67557	innovation	1
+67557	innovation	2
 67557	for	1
 67557	savety	1
 67557	consumer	1
@@ -2687,7 +2699,7 @@
 67557	agroalimenair	1
 67557	vers	1
 67557	écologique	1
-67557	actualiter	1
+67557	actualité	1
 67558	raison	1
 67558	texture	1
 67558	particulière	1
@@ -2833,7 +2845,9 @@
 67558	longtemps	1
 67558	prometteur	1
 67558	fabricant	1
+67558	en	1
 67558	direct	1
+67558	de	1
 67558	laboratoire	1
 67561	septembre	1
 67561	nice	3
@@ -2854,7 +2868,7 @@
 67561	durabilité	2
 67561	intrinsèque	2
 67561	procéder	2
-67561	catalyse	2
+67561	catalyse	3
 67561	universitaire	1
 67561	évoquer	1
 67561	traver	1
@@ -2878,8 +2892,7 @@
 67561	étendre	1
 67561	optimisation	1
 67561	impact	1
-67561	catalys	1
-67561	evénemer	1
+67561	evénement	1
 67794	combien	1
 67794	civilisation	1
 67794	effondré	1
@@ -3157,7 +3170,7 @@
 67794	conclure	1
 67794	quatrième	1
 67794	couvertur	1
-67794	focus	1
+67794	Focus	1
 67795	be	3
 67795	fusion	3
 67795	vous	4
@@ -3374,7 +3387,7 @@
 67795	acter	1
 67795	accomplir	1
 67795	perspectif	1
-67795	focus	1
+67795	Focus	1
 67796	schneider	1
 67796	electric	1
 67796	développ	1
@@ -3449,6 +3462,7 @@
 67796	sari	1
 67796	ajout	1
 67796	actualité	1
+67796	innovation	1
 67797	obtenir	1
 67797	davantage	1
 67797	donnée	1
@@ -3499,6 +3513,7 @@
 67797	analyse	1
 67797	tester	1
 67797	actualité	1
+67797	innovation	1
 67798	concevoir	1
 67798	diriger	1
 67798	professeur	1
@@ -3709,7 +3724,9 @@
 67798	là	1
 67798	lâche	1
 67798	imperturbable	1
+67798	au	1
 67798	coeur	1
+67798	de	1
 67798	région	1
 67799	obésité	3
 67799	dire	1
@@ -3801,6 +3818,7 @@
 67799	veillet	1
 67799	fondateur	1
 67799	produire	1
+67799	de	2
 67799	côté	1
 67799	pôle	1
 67800	dix	1
@@ -3926,7 +3944,9 @@
 67800	connaître	1
 67800	arabidopsi	1
 67800	aide	1
+67800	en	1
 67800	direct	1
+67800	de	1
 67800	laboratoire	1
 67801	service	2
 67801	urgence	2
@@ -4067,7 +4087,9 @@
 67801	apporter	1
 67801	traumatiser	1
 67801	sûr	1
+67801	en	1
 67801	direct	1
+67801	de	1
 67801	laboratoire	1
 67802	organe	1
 67802	complexe	2
@@ -4228,7 +4250,9 @@
 67802	start	1
 67802	up	1
 67802	endocells	1
+67802	en	1
 67802	direct	1
+67802	de	1
 67802	laboratoire	1
 67803	octobre	1
 67803	tenir	1
@@ -4238,7 +4262,7 @@
 67803	changemer	1
 67803	climatique	3
 67803	impact	2
-67803	adaptation	7
+67803	adaptation	6
 67803	créer	2
 67803	forum	1
 67803	axer	1
@@ -4278,6 +4302,7 @@
 67803	associer	1
 67803	public	1
 67803	stratégie	1
+67803	adaptatier	1
 67803	evénement	1
 67804	octobre	1
 67804	forum	3
@@ -4319,7 +4344,7 @@
 67804	objet	1
 67804	débat	1
 67804	conférenc	1
-67804	evénemer	1
+67804	evénement	1
 67937	publier	1
 67937	revue	1
 67937	cell	1
@@ -4661,7 +4686,7 @@
 67937	immuniter	1
 67937	médecine	1
 67937	gentleman	1
-67937	focus	1
+67937	Focus	1
 67938	remarquable	1
 67938	ouvrage	3
 67938	pascal	5
@@ -4858,7 +4883,7 @@
 67938	vouloir	1
 67938	vivon	1
 67938	ajout	1
-67938	focus	1
+67938	Focus	1
 67939	satellite	8
 67939	franco	3
 67939	indien	4
@@ -5201,7 +5226,7 @@
 67939	préparation	1
 67939	mieux	1
 67939	connaître	1
-67939	focus	1
+67939	Focus	1
 67940	universitaire	2
 67940	hospitalier	3
 67940	isen	2
@@ -5326,6 +5351,7 @@
 67940	travailler	1
 67940	centre	1
 67940	actualité	1
+67940	innovation	1
 67941	hercule	6
 67941	constituer	1
 67941	jambe	1
@@ -5404,7 +5430,7 @@
 67941	présenter	1
 67941	stand	1
 67941	quatre	1
-67941	innovation	2
+67941	innovation	3
 67941	exclusiviter	1
 67941	baptiser	1
 67941	prototype	2
@@ -5556,6 +5582,7 @@
 67942	horizon	1
 67942	variation	1
 67942	actualité	1
+67942	innovation	1
 67943	priorité	1
 67943	national	1
 67943	cea	1
@@ -5617,7 +5644,9 @@
 67943	dérouler	1
 67943	étoile	1
 67943	lancement	1
+67943	au	1
 67943	coeur	1
+67943	de	1
 67943	région	1
 67944	partenariat	1
 67944	hambourg	3
@@ -5630,7 +5659,7 @@
 67944	intensif	1
 67944	erasmu	2
 67944	hydrographie	4
-67944	océanographi	3
+67944	océanographi	2
 67944	département	1
 67944	creux	1
 67944	lac	3
@@ -5684,13 +5713,15 @@
 67944	cartographique	1
 67944	précison	1
 67944	ailleurs	1
-67944	enseignement	2
+67944	enseignement	1
 67944	supérieur	1
 67944	union	1
 67944	délivrer	1
 67944	topographie	1
 67944	lance	1
-67944	horizon	1
+67944	océanographie	1
+67944	Horizon	1
+67944	Enseignement	1
 67945	octobre	1
 67945	iut	2
 67945	sénart	3
@@ -6072,7 +6103,7 @@
 68273	généralement	1
 68273	pme	1
 68273	démocratis	1
-68273	focus	1
+68273	Focus	1
 68274	installer	2
 68274	etat	3
 68274	unir	3
@@ -6133,7 +6164,7 @@
 68274	mort	1
 68274	lui	1
 68274	accident	4
-68274	route	2
+68274	route	1
 68274	yeux	1
 68274	trop	1
 68274	gros	1
@@ -6297,7 +6328,8 @@
 68274	extrair	1
 68274	sauver	1
 68274	vie	1
-68274	focus	1
+68274	router	1
+68274	Focus	1
 68275	force	1
 68275	constater	1
 68275	outil	4
@@ -6443,7 +6475,7 @@
 68275	nécessité	1
 68275	approch	1
 68275	spatial	1
-68275	focus	1
+68275	Focus	1
 68276	fourmiller	1
 68276	information	1
 68276	témoignage	1
@@ -6622,7 +6654,7 @@
 68276	habilité	1
 68276	main	1
 68276	intelligence	1
-68276	focus	1
+68276	Focus	1
 68277	porter	1
 68277	pierre	1
 68277	marie	1
@@ -6637,7 +6669,7 @@
 68277	novembre	1
 68277	entièrement	1
 68277	dédier	1
-68277	vieillissement	3
+68277	vieillissement	2
 68277	placer	1
 68277	direction	1
 68277	professeur	1
@@ -6742,7 +6774,9 @@
 68277	renforcer	1
 68277	dispositif	1
 68277	dédié	1
+68277	vieillissemer	1
 68277	actualité	1
+68277	innovation	1
 68278	novembre	1
 68278	rhodia	1
 68278	ens	1
@@ -6803,6 +6837,7 @@
 68278	verte	1
 68278	installer	1
 68278	actualité	1
+68278	innovation	1
 68279	localiser	1
 68279	territoire	1
 68279	bourgogne	4
@@ -7110,7 +7145,9 @@
 68279	prairi	1
 68279	outil	1
 68279	esquisse	1
+68279	au	1
 68279	coeur	1
+68279	de	1
 68279	région	1
 68280	présenter	1
 68280	tel	1
@@ -7220,7 +7257,9 @@
 68280	facile	1
 68280	fabriquer	1
 68280	inédit	1
+68280	en	1
 68280	direct	1
+68280	de	1
 68280	laboratoire	1
 68281	espagne	1
 68281	portugal	1
@@ -7368,6 +7407,7 @@
 68283	pérennité	1
 68283	écosystème	1
 68283	forestier	1
+68283	avoir	1
 68283	lire	1
 68383	force	1
 68383	constater	2
@@ -7640,7 +7680,7 @@
 68383	terrain	1
 68383	quelque	1
 68383	étranger	1
-68383	focus	1
+68383	Focus	1
 68384	créer	1
 68384	près	1
 68384	newvecty	4
@@ -7668,7 +7708,7 @@
 68384	renforcer	2
 68384	collaboration	1
 68384	scientifique	1
-68384	innovation	1
+68384	innovation	2
 68384	rupture	1
 68384	animal	6
 68384	oeuvre	1
@@ -7799,6 +7839,7 @@
 68385	biocarburant	1
 68385	génération	1
 68385	actualité	1
+68385	innovation	1
 68386	octobre	2
 68386	berlin	1
 68386	naître	1
@@ -7863,7 +7904,8 @@
 68386	humain	1
 68386	sociale	1
 68386	émergence	1
-68386	actualiter	1
+68386	actualité	1
+68386	innovation	1
 68387	environ	1
 68387	trente	1
 68387	travailler	3
@@ -7896,7 +7938,7 @@
 68387	leucodystrophie	1
 68387	effet	4
 68387	bénéfique	2
-68387	santé	1
+68387	santé	2
 68387	molécule	4
 68387	présent	1
 68387	vin	7
@@ -8139,8 +8181,9 @@
 68387	dégénérescence	1
 68387	devoir	1
 68387	indique	1
-68387	santer	1
+68387	au	1
 68387	coeur	1
+68387	de	1
 68388	connu	2
 68388	rôl	1
 68388	infection	2
@@ -8290,7 +8333,9 @@
 68388	agent	1
 68388	contre	1
 68388	neurotoxicité	1
+68388	en	1
 68388	direct	1
+68388	de	1
 68388	laboratoire	1
 68389	publier	1
 68389	nature	1
@@ -8426,7 +8471,9 @@
 68389	ore	1
 68389	briser	1
 68389	menacer	1
+68389	en	1
 68389	direct	1
+68389	de	1
 68389	laboratoire	1
 68390	découverte	1
 68390	intéressant	1
@@ -8544,6 +8591,8 @@
 68390	associant	1
 68390	eau	1
 68390	capable	1
+68390	en	1
+68390	de	1
 68390	laboratoire	1
 68391	présent	1
 68391	exister	1
@@ -8671,7 +8720,9 @@
 68391	complexe	1
 68391	voir	1
 68391	nanométrique	1
+68391	en	1
 68391	direct	1
+68391	de	1
 68391	laboratoire	1
 68392	initiative	1
 68392	professionnel	1
@@ -9088,7 +9139,7 @@
 68638	unique	1
 68638	vers	1
 68638	puissant	1
-68638	focus	1
+68638	Focus	1
 68639	créé	1
 68639	initiativ	1
 68639	constructeur	1
@@ -9177,6 +9228,7 @@
 68639	pilotable	1
 68639	inauguration	1
 68639	actualité	1
+68639	innovation	1
 68640	octobre	1
 68640	véhicule	7
 68640	électrique	4
@@ -9253,6 +9305,7 @@
 68640	bord	1
 68640	voiture	1
 68640	actualité	1
+68640	innovation	1
 68641	lancer	1
 68641	prix	2
 68641	jean	2
@@ -9329,6 +9382,7 @@
 68641	industriel	1
 68641	récompensé	1
 68641	actualité	1
+68641	innovation	1
 68642	nom	1
 68642	sélénium	1
 68642	titane	1
@@ -9475,6 +9529,7 @@
 68642	afrique	1
 68642	net	1
 68642	actualité	1
+68642	innovation	1
 68643	positionnée	1
 68643	secteur	1
 68643	activité	1
@@ -9733,7 +9788,9 @@
 68643	microbiologique	1
 68643	autorisation	1
 68643	prometteur	1
+68643	au	1
 68643	coeur	1
+68643	de	1
 68643	région	1
 68644	idée	1
 68644	associer	1
@@ -9830,7 +9887,9 @@
 68644	appoint	1
 68644	microsystème	2
 68644	sourc	1
+68644	en	1
 68644	direct	1
+68644	de	1
 68644	laboratoire	1
 68645	allergie	2
 68645	pollen	7
@@ -9984,7 +10043,9 @@
 68645	économique	1
 68645	tourism	1
 68645	evaluer	1
+68645	en	1
 68645	direct	1
+68645	de	1
 68645	laboratoire	1
 68646	utiliser	2
 68646	diagnostic	1
@@ -10103,7 +10164,9 @@
 68646	cas	1
 68646	déclarer	1
 68646	essai	1
+68646	en	1
 68646	direct	1
+68646	de	1
 68646	laboratoire	1
 68881	alliance	5
 68881	sinon	1
@@ -10430,7 +10493,7 @@
 68881	actuellement	1
 68881	née	1
 68881	cea	1
-68881	focus	1
+68881	Focus	1
 68882	partie	2
 68882	livre	1
 68882	vise	2
@@ -10723,7 +10786,7 @@
 68882	axe	1
 68882	futur	1
 68882	programme	1
-68882	focus	1
+68882	Focus	1
 68883	pilote	1
 68883	olivier	1
 68883	ménage	1
@@ -10884,6 +10947,7 @@
 68883	établir	1
 68883	nouveau	1
 68883	actualité	1
+68883	innovation	1
 68884	janvier	1
 68884	recherche	1
 68884	scientifique	1
@@ -10983,6 +11047,7 @@
 68884	comment	1
 68884	énergi	1
 68884	actualité	1
+68884	innovation	1
 68885	technique	7
 68885	lait	3
 68885	produire	4
@@ -11008,7 +11073,7 @@
 68885	fortement	2
 68885	implanter	2
 68885	franc	7
-68885	comté	4
+68885	comté	3
 68885	participer	1
 68885	activemer	1
 68885	naissance	1
@@ -11189,7 +11254,7 @@
 68885	dizaine	1
 68885	véritable	1
 68885	ailleurs	1
-68885	comter	1
+68885	comter	2
 68885	favorable	1
 68885	présence	1
 68885	ctfc	1
@@ -11234,6 +11299,8 @@
 68885	formation	1
 68885	documentation	1
 68885	coeur	2
+68885	au	1
+68885	de	1
 68886	publier	1
 68886	revue	1
 68886	pna	1
@@ -11365,7 +11432,9 @@
 68886	global	1
 68886	finalement	1
 68886	rapide	2
+68886	en	1
 68886	direct	1
+68886	de	1
 68887	plasticité	1
 68887	biologique	1
 68887	organisme	1
@@ -11484,7 +11553,9 @@
 68887	article	1
 68887	certain	1
 68887	forme	1
+68887	en	1
 68887	direct	1
+68887	de	1
 68887	laboratoire	1
 68888	janvier	2
 68888	pékin	5
@@ -11647,7 +11718,7 @@
 68889	ouverture	1
 68889	dominiqu	1
 68889	wolton	1
-68889	evénemer	1
+68889	evénement	1
 69177	cne	9
 69177	commencer	1
 69177	campagne	1
@@ -11972,7 +12043,7 @@
 69177	totalement	1
 69177	félicité	1
 69177	défi	1
-69177	focus	1
+69177	Focus	1
 69178	transmuter	2
 69178	déchet	5
 69178	radiotoxique	2
@@ -12172,7 +12243,7 @@
 69178	polluant	1
 69178	ébauche	1
 69178	propre	1
-69178	focus	1
+69178	Focus	1
 69179	vol	6
 69179	qualification	4
 69179	avoir	2
@@ -12190,7 +12261,7 @@
 69179	séparation	1
 69179	charge	5
 69179	utile	5
-69179	vega	3
+69179	vega	4
 69179	emporter	1
 69179	bord	1
 69179	multiple	1
@@ -12263,7 +12334,7 @@
 69179	résumé	1
 69179	mot	1
 69179	donnée	1
-69179	veger	5
+69179	veger	4
 69179	petit	2
 69179	haut	1
 69179	m	3
@@ -12384,7 +12455,7 @@
 69179	marché	1
 69179	international	1
 69179	européen	1
-69179	focus	1
+69179	Focus	1
 69180	janvier	1
 69180	new	1
 69180	dehli	1
@@ -12457,6 +12528,7 @@
 69180	franco	1
 69180	indienne	1
 69180	actualité	1
+69180	innovation	1
 69181	février	1
 69181	lancée	1
 69181	officiellement	1
@@ -12595,6 +12667,7 @@
 69181	produire	1
 69181	souvent	1
 69181	actualité	1
+69181	innovation	1
 69182	face	1
 69182	changement	1
 69182	climatique	3
@@ -12717,7 +12790,9 @@
 69182	futur	1
 69182	tolérance	1
 69182	sécheresse	1
+69182	au	1
 69182	coeur	1
+69182	de	1
 69182	région	1
 69183	obtenu	1
 69183	aide	1
@@ -12839,7 +12914,9 @@
 69183	assimilé	1
 69183	façon	1
 69183	fiable	1
+69183	en	1
 69183	direct	1
+69183	de	1
 69183	laboratoire	1
 69184	neurotransmetteur	3
 69184	cérébral	1
@@ -12978,7 +13055,9 @@
 69184	immense	1
 69184	perspectif	1
 69184	o	1
+69184	en	1
 69184	direct	1
+69184	de	1
 69184	laboratoire	1
 69185	février	1
 69185	dérouler	1
@@ -13011,7 +13090,7 @@
 69185	suivre	1
 69185	obligation	1
 69185	assister	1
-69185	enseignement	2
+69185	enseignement	1
 69185	dispenser	1
 69185	école	1
 69185	impossibilité	1
@@ -13045,7 +13124,8 @@
 69185	tant	1
 69185	consulter	1
 69185	durable	1
-69185	horizon	1
+69185	Horizon	1
+69185	Enseignement	1
 69186	avril	1
 69186	prochain	1
 69186	espci	2
@@ -13128,7 +13208,7 @@
 69186	thermoélectrique	1
 69186	thermomagnétique	1
 69186	perspectif	1
-69186	evénemer	1
+69186	evénement	1
 69533	automne	1
 69533	giec	6
 69533	groupe	5
@@ -13353,7 +13433,7 @@
 69533	décennie	2
 69533	surtout	1
 69533	prochain	1
-69533	focus	1
+69533	Focus	1
 69534	février	1
 69534	dijon	2
 69534	tenir	1
@@ -13583,7 +13663,7 @@
 69534	bv	1
 69534	rimer	1
 69534	santé	1
-69534	focus	1
+69534	Focus	1
 69535	esquisser	1
 69535	pouvoir	2
 69535	selon	1
@@ -13795,7 +13875,7 @@
 69535	voir	1
 69535	consulter	1
 69535	internet	1
-69535	focus	1
+69535	Focus	1
 69536	partenariat	2
 69536	sud	3
 69536	agence	2
@@ -13884,7 +13964,8 @@
 69536	physique	1
 69536	stap	1
 69536	sport	1
-69536	actualiter	1
+69536	actualité	1
+69536	innovation	1
 69537	recherche	1
 69537	mener	2
 69537	décennier	1
@@ -14022,6 +14103,7 @@
 69537	hydrodynamique	1
 69537	cartographier	1
 69537	actualité	1
+69537	innovation	1
 69538	février	1
 69538	lancer	1
 69538	cantogether	3
@@ -14135,7 +14217,7 @@
 69538	vers	1
 69538	conception	1
 69538	actualité	1
-69538	innovation	1
+69538	Innovations	1
 69539	début	1
 69539	protéine	7
 69539	fluorescent	4
@@ -14277,7 +14359,9 @@
 69539	concevoir	1
 69539	améliorée	1
 69539	illuminer	1
+69539	en	1
 69539	direct	1
+69539	de	1
 69539	laboratoire	1
 69540	écriture	1
 69540	effacement	1
@@ -14431,7 +14515,9 @@
 69540	inscrire	1
 69540	quel	1
 69540	minimum	1
+69540	en	1
 69540	direct	1
+69540	de	1
 69540	laboratoire	1
 69541	organiser	3
 69541	journée	2
@@ -14874,8 +14960,8 @@
 69811	couvert	1
 69811	végétal	1
 69811	bon	1
-69811	loyal	1
-69811	focus	1
+69811	loyau	1
+69811	Focus	1
 69812	là	1
 69812	plupart	1
 69812	percevoir	1
@@ -15063,7 +15149,7 @@
 69812	atout	1
 69812	européen	1
 69812	mondial	1
-69812	focus	1
+69812	Focus	1
 69813	transmettre	1
 69813	moustiqu	4
 69813	aede	1
@@ -15261,7 +15347,7 @@
 69813	lutte	1
 69813	lance	1
 69813	pilot	1
-69813	focus	1
+69813	Focus	1
 69814	réchauffemer	1
 69814	climatique	1
 69814	planèt	1
@@ -15389,6 +15475,7 @@
 69814	superfici	1
 69814	classe	2
 69814	actualité	1
+69814	innovation	1
 69815	intestin	3
 69815	humain	2
 69815	renferm	1
@@ -15523,6 +15610,7 @@
 69815	mici	1
 69815	métagénomique	1
 69815	actualité	1
+69815	innovation	1
 69816	delà	1
 69816	apport	1
 69816	purement	1
@@ -15668,6 +15756,7 @@
 69816	quel	1
 69816	français	1
 69816	actualité	1
+69816	innovation	1
 69817	lauréat	1
 69817	second	2
 69817	vague	1
@@ -15797,7 +15886,9 @@
 69817	sinon	1
 69817	unique	1
 69817	baptiser	1
+69817	au	1
 69817	coeur	1
+69817	de	1
 69817	région	1
 69818	porter	2
 69818	ciat	1
@@ -15883,6 +15974,7 @@
 69818	positif	1
 69818	viser	1
 69818	sélectionner	1
+69818	de	2
 69818	côté	1
 69818	pôle	1
 69819	verre	11
@@ -16018,7 +16110,9 @@
 69819	intervenir	1
 69819	élaboration	1
 69819	voire	1
+69819	en	1
 69819	direct	1
+69819	de	1
 69819	laboratoire	1
 69820	mai	1
 69820	palais	1
@@ -16154,7 +16248,7 @@
 69821	tourt	1
 69821	postface	1
 69821	j	1
-69821	avoir	2
+69821	avoir	3
 69821	découvrir	2
 69821	gen	1
 69821	humble	1
@@ -16638,7 +16732,7 @@
 70161	piste	1
 70161	réflexier	1
 70161	tête	1
-70161	focus	1
+70161	Focus	1
 70162	février	1
 70162	mur	1
 70162	thale	3
@@ -17099,6 +17193,7 @@
 70163	succès	1
 70163	intégration	1
 70163	actualité	1
+70163	innovation	1
 70164	juin	2
 70164	journée	1
 70164	mondial	1
@@ -17196,6 +17291,7 @@
 70164	conclusion	1
 70164	vision	2
 70164	actualité	1
+70164	innovation	1
 70165	drone	6
 70165	développer	1
 70165	grenoblois	2
@@ -17321,6 +17417,7 @@
 70165	aviation	1
 70165	dgac	1
 70165	actualité	1
+70165	innovation	1
 70166	certes	2
 70166	puce	1
 70166	électronique	1
@@ -17515,7 +17612,9 @@
 70166	guis	1
 70166	conclusion	1
 70166	technolgiqu	1
+70166	au	1
 70166	coeur	1
+70166	de	1
 70166	région	1
 70167	modifier	1
 70167	chimiquement	1
@@ -17628,8 +17727,10 @@
 70167	chemistry	1
 70167	étonnant	1
 70167	fortement	1
-70167	conducteur	1
+70167	conductricer	1
+70167	en	1
 70167	direct	1
+70167	de	1
 70167	laboratoire	1
 70168	juin	1
 70168	tiendra	1
@@ -17679,7 +17780,7 @@
 70168	entrepreneuriat	1
 70168	partenaire	1
 70168	extia	1
-70168	evénemer	1
+70168	evénement	1
 70169	juin	1
 70169	tenir	1
 70169	édition	6
@@ -17764,7 +17865,7 @@
 70169	bureau	1
 70169	veriter	1
 70169	media	1
-70169	evénemer	1
+70169	evénement	1
 70170	juin	1
 70170	toulous	7
 70170	cne	2
@@ -17837,7 +17938,7 @@
 70170	affaire	1
 70170	expansion	1
 70170	satellite	1
-70170	evénemer	1
+70170	evénement	1
 70420	dispositif	3
 70420	particulièrement	2
 70420	original	1
@@ -17955,7 +18056,7 @@
 70420	pleinement	1
 70420	via	4
 70420	phenome	2
-70420	agricultur	1
+70420	agricultur	2
 70420	dire	1
 70420	durable	2
 70420	autrement	1
@@ -18129,8 +18230,7 @@
 70420	produire	1
 70420	matériel	1
 70420	végétal	1
-70420	agriculture	1
-70420	focus	1
+70420	Focus	1
 70421	réel	4
 70421	équiper	3
 70421	casqu	4
@@ -18441,7 +18541,7 @@
 70421	déplac	1
 70421	service	1
 70421	prometteur	1
-70421	focus	1
+70421	Focus	1
 70422	maintenant	1
 70422	six	1
 70422	mois	1
@@ -18660,7 +18760,7 @@
 70422	agenc	1
 70422	régional	1
 70422	il	1
-70422	focus	1
+70422	Focus	1
 70423	montrer	1
 70423	tel	1
 70423	structure	3
@@ -18771,6 +18871,7 @@
 70423	toujours	1
 70423	performant	1
 70423	actualité	1
+70423	innovation	1
 70424	mission	3
 70424	euclid	3
 70424	initier	1
@@ -18968,6 +19069,7 @@
 70424	feu	1
 70424	vert	1
 70424	actualité	1
+70424	innovation	1
 70425	système	2
 70425	mettre	2
 70425	point	1
@@ -19141,6 +19243,7 @@
 70425	détecteur	1
 70425	modèle	1
 70425	actualité	1
+70425	innovation	1
 70426	groupe	2
 70426	air	3
 70426	liquide	3
@@ -19171,7 +19274,7 @@
 70426	annoncer	1
 70426	création	2
 70426	chaire	3
-70426	enseignement	2
+70426	enseignement	1
 70426	durée	1
 70426	initial	1
 70426	bénéficie	1
@@ -19236,7 +19339,8 @@
 70426	chaleur	1
 70426	constituer	1
 70426	mondial	1
-70426	horizon	1
+70426	Horizon	1
+70426	Enseignement	1
 70428	octobre	1
 70428	prochain	1
 70428	dijon	1
@@ -19288,7 +19392,7 @@
 70428	milieu	1
 70428	psychosocial	1
 70428	education	1
-70428	evénemer	1
+70428	evénement	1
 70429	développement	1
 70429	nanomatérial	1
 70429	cessent	1
@@ -19353,10 +19457,10 @@
 70429	publier	1
 70429	edition	1
 70429	manuscrit	1
-70429	lire	1
+70429	lire	2
 70429	méditer	1
 70429	manufacturer	1
-70429	lir	1
+70429	à	1
 70743	laboratoire	1
 70743	ecole	5
 70743	central	4
@@ -19464,6 +19568,7 @@
 70743	eolienn	1
 70743	flottant	1
 70743	actualité	1
+70743	innovation	1
 70744	test	1
 70744	réaliser	3
 70744	montrer	1
@@ -19615,6 +19720,7 @@
 70744	application	1
 70744	obtenir	1
 70744	actualité	1
+70744	innovation	1
 70745	unité	1
 70745	mixte	1
 70745	umr	2
@@ -19676,7 +19782,7 @@
 70745	étudier	1
 70745	dynamique	3
 70745	relation	2
-70745	homm	2
+70745	homm	1
 70745	néolithique	1
 70745	voir	1
 70745	prévisier	1
@@ -19769,7 +19875,7 @@
 70745	écosystèm	1
 70745	dernier	1
 70745	vise	1
-70745	homme	1
+70745	homme	2
 70745	réagir	1
 70745	multi	1
 70745	exposition	1
@@ -19828,7 +19934,9 @@
 70745	émergence	1
 70745	prometteur	1
 70745	bourgogne	1
+70745	au	1
 70745	coeur	1
+70745	de	1
 70746	plupart	1
 70746	microorganisme	1
 70746	vivre	1
@@ -19967,7 +20075,9 @@
 70746	digestif	1
 70746	flageller	1
 70746	torpiller	1
+70746	en	1
 70746	direct	1
+70746	de	1
 70746	laboratoire	1
 70747	facile	1
 70747	manipuler	1
@@ -20070,7 +20180,9 @@
 70747	bio	1
 70747	inspirée	1
 70747	émettre	1
+70747	en	1
 70747	direct	1
+70747	de	1
 70747	laboratoire	1
 70748	consacrée	1
 70748	optoélectronique	2
@@ -20126,7 +20238,7 @@
 70748	envergure	1
 70748	promouvoir	1
 70748	meilleur	1
-70748	enseignement	2
+70748	enseignement	1
 70748	supérieur	1
 70748	profit	1
 70748	société	1
@@ -20135,7 +20247,8 @@
 70748	ascension	1
 70748	social	1
 70748	création	1
-70748	horizon	1
+70748	Horizon	1
+70748	Enseignement	1
 70749	octobre	2
 70749	prochain	3
 70749	dijon	1
@@ -20312,7 +20425,7 @@
 70749	offre	1
 70749	marché	1
 70749	conclure	1
-70749	evénement	1
+70749	Evénement	1
 70751	octobre	3
 70751	roubai	1
 70751	inaugurer	1
@@ -20405,7 +20518,7 @@
 70751	économique	1
 70751	culturel	1
 70751	institutionnel	1
-70751	evénemer	1
+70751	evénement	1
 70752	septembre	2
 70752	lyon	1
 70752	dérouler	1
@@ -20501,6 +20614,7 @@
 70753	couvrir	1
 70753	plupart	1
 70753	économie	1
+70753	avoir	1
 70753	lire	1
 70914	voulon	1
 70914	rester	1
@@ -20789,7 +20903,7 @@
 70914	million	1
 70914	vers	1
 70914	démocratisation	1
-70914	focus	1
+70914	Focus	1
 70915	maîtrise	2
 70915	risque	7
 70915	ceer	7
@@ -20949,7 +21063,7 @@
 70915	exercice	1
 70915	unique	1
 70915	genre	1
-70915	focus	1
+70915	Focus	1
 70916	campagn	4
 70916	envergure	1
 70916	précédent	1
@@ -21140,7 +21254,7 @@
 70916	modélisation	1
 70916	cycle	2
 70916	eau	3
-70916	focus	2
+70916	focus	1
 70916	projectier	1
 70916	hydrométéorologique	3
 70916	extrême	4
@@ -21286,6 +21400,7 @@
 70916	politique	1
 70916	considérable	1
 70916	mieux	1
+70916	Focus	1
 70917	fréquenter	1
 70917	autrefoi	1
 70917	côte	1
@@ -21339,7 +21454,7 @@
 70917	bassin	4
 70917	girond	5
 70917	garonne	1
-70917	dordogne	2
+70917	dordogne	3
 70917	protection	1
 70917	réglementaire	1
 70917	espèce	2
@@ -21409,8 +21524,8 @@
 70917	espèc	1
 70917	jeune	1
 70917	relâché	1
-70917	dordogn	1
 70917	actualité	1
+70917	innovation	1
 70918	traiter	1
 70918	forme	1
 70918	précoce	1
@@ -21522,6 +21637,7 @@
 70918	centre	1
 70918	référence	1
 70918	actualité	1
+70918	innovation	1
 70919	mesurer	1
 70919	masse	3
 70919	molécul	4
@@ -21645,6 +21761,7 @@
 70919	août	1
 70919	pesée	1
 70919	actualité	1
+70919	innovation	1
 70920	approfondir	1
 70920	durabilité	3
 70920	matière	3
@@ -21735,6 +21852,7 @@
 70920	désormais	1
 70920	asi	1
 70920	actualité	1
+70920	innovation	1
 70921	octobre	2
 70921	prochain	1
 70921	européen	1
@@ -21872,7 +21990,9 @@
 70921	wallloi	1
 70921	rendez	1
 70921	vous	1
+70921	au	1
 70921	coeur	1
+70921	de	1
 70921	région	1
 70922	adn	5
 70922	cesse	1
@@ -21934,6 +22054,8 @@
 70922	résistant	1
 70922	chimiothérapie	1
 70922	observer	1
+70922	en	1
+70922	de	1
 70922	laboratoire	1
 70923	rentrer	1
 70923	universitaire	1
@@ -22316,7 +22438,7 @@
 71357	supranational	1
 71357	principalement	1
 71357	europe	1
-71357	focus	1
+71357	Focus	1
 71358	nom	1
 71358	groupe	10
 71358	cinq	1
@@ -22532,7 +22654,7 @@
 71358	haut	1
 71358	demain	1
 71358	ajouter	1
-71358	focus	1
+71358	Focus	1
 71359	vitagorer	1
 71359	agrimip	1
 71359	aquimer	1
@@ -22846,7 +22968,7 @@
 71359	premier	1
 71359	visible	1
 71359	construit	1
-71359	focus	1
+71359	Focus	1
 71360	créée	1
 71360	stanisla	1
 71360	veillet	1
@@ -22989,6 +23111,7 @@
 71360	partir	1
 71360	aliment	1
 71360	actualité	1
+71360	innovation	1
 71361	nom	2
 71361	gemtex	5
 71361	génie	1
@@ -23087,7 +23210,7 @@
 71361	qualitatif	1
 71361	région	3
 71361	nord	2
-71361	caler	1
+71361	caler	2
 71361	classe	1
 71361	polytechnique	1
 71361	aix	2
@@ -23109,7 +23232,8 @@
 71361	suédois	1
 71361	borer	1
 71361	coeur	2
-71361	calai	1
+71361	au	1
+71361	de	1
 71362	quatre	1
 71362	environ	1
 71362	vingt	1
@@ -23157,7 +23281,7 @@
 71362	procédé	1
 71362	printemps	1
 71362	établissemer	2
-71362	enseignement	3
+71362	enseignement	2
 71362	supérieur	2
 71362	toulousain	1
 71362	aller	1
@@ -23245,7 +23369,8 @@
 71362	frontière	2
 71362	hexagone	2
 71362	transfère	1
-71362	horizon	1
+71362	Horizon	1
+71362	Enseignement	1
 71363	novembre	1
 71363	ecole	1
 71363	national	1
@@ -23337,7 +23462,7 @@
 71363	chacun	1
 71363	participant	1
 71363	énergi	1
-71363	evénemer	1
+71363	evénement	1
 71366	kilogramme	1
 71366	tel	1
 71366	poids	1
@@ -23423,6 +23548,7 @@
 71366	régal	1
 71366	finir	1
 71366	gaspillage	1
+71366	avoir	1
 71366	lire	1
 71612	bourse	3
 71612	obtenir	2
@@ -23626,7 +23752,7 @@
 71612	prochain	1
 71612	nouveau	1
 71612	os	1
-71612	focus	1
+71612	Focus	1
 71614	robotique	3
 71614	chirurgical	2
 71614	mouvement	3
@@ -23922,7 +24048,7 @@
 71614	centrer	1
 71614	devoir	1
 71614	fin	1
-71614	focus	1
+71614	Focus	1
 71615	exister	1
 71615	programme	1
 71615	indien	2
@@ -24021,6 +24147,7 @@
 71615	belgiqu	1
 71615	haida	1
 71615	actualité	1
+71615	innovation	1
 71616	créer	1
 71616	sylvain	1
 71616	picot	1
@@ -24160,6 +24287,7 @@
 71616	médecin	1
 71616	régénératif	1
 71616	actualité	1
+71616	innovation	1
 71617	septembre	1
 71617	airbus	7
 71617	publier	1
@@ -24337,6 +24465,7 @@
 71617	trajet	1
 71617	rapide	1
 71617	actualité	1
+71617	innovation	1
 71618	échange	1
 71618	commercial	1
 71618	cesser	1
@@ -24439,7 +24568,9 @@
 71618	prédir	1
 71618	organisme	1
 71618	nuisible	1
+71618	en	1
 71618	direct	1
+71618	de	1
 71618	laboratoire	1
 71619	inaugurer	1
 71619	officiellement	1
@@ -24529,7 +24660,7 @@
 71619	stratégique	1
 71619	filièr	1
 71619	mondial	1
-71619	horizon	1
+71619	Horizon	1
 71620	décembre	1
 71620	cnam	1
 71620	genopole	1
@@ -24581,7 +24712,7 @@
 71620	analyser	1
 71620	contribution	1
 71620	social	1
-71620	evénemer	1
+71620	evénement	1
 71621	habiter	2
 71621	tel	1
 71621	lequel	1
@@ -24748,6 +24879,7 @@
 71621	défi	1
 71621	planétaire	1
 71621	actuel	1
+71621	à	1
 71621	lire	1
 71835	me	2
 71835	demande	1
@@ -25049,7 +25181,7 @@
 71835	road	1
 71835	trip	1
 71835	coulisse	1
-71835	focus	1
+71835	Focus	1
 71836	système	9
 71836	répondre	2
 71836	demande	1
@@ -25294,7 +25426,7 @@
 71836	agriculture	1
 71836	fouler	1
 71836	lancement	1
-71836	focus	1
+71836	Focus	1
 71837	homme	1
 71837	étudier	4
 71837	passion	1
@@ -25504,7 +25636,7 @@
 71837	milieu	1
 71837	aquatique	1
 71837	biologiste	1
-71837	focus	1
+71837	Focus	1
 71838	lsce	3
 71838	climat	1
 71838	ceer	1
@@ -25589,6 +25721,7 @@
 71838	passif	1
 71838	franco	1
 71838	actualité	1
+71838	innovation	1
 71839	caméra	1
 71839	thermique	1
 71839	autodirecteur	1
@@ -25664,6 +25797,7 @@
 71839	renforcemer	1
 71839	technologique	1
 71839	actualité	1
+71839	innovation	1
 71840	baser	1
 71840	genay	1
 71840	petit	1
@@ -25790,6 +25924,7 @@
 71840	implant	1
 71840	asie	1
 71840	actualité	1
+71840	innovation	1
 71841	situation	1
 71841	normal	1
 71841	lecture	6
@@ -25870,6 +26005,7 @@
 71841	feder	1
 71841	mesurer	1
 71841	actualité	1
+71841	innovation	1
 71842	technopôle	3
 71842	dédier	1
 71842	uniquement	1
@@ -26054,6 +26190,8 @@
 71842	alimentation	1
 71842	coeur	2
 71842	stratégie	1
+71842	au	1
+71842	de	1
 71842	région	1
 71843	heptanone	4
 71843	heure	1
@@ -26154,7 +26292,9 @@
 71843	naturel	1
 71843	venin	1
 71843	abeille	1
+71843	en	1
 71843	direct	1
+71843	de	1
 71843	laboratoire	1
 71845	janvier	1
 71845	aix	1
@@ -26521,7 +26661,7 @@
 72113	près	1
 72113	coeur	1
 72113	débat	1
-72113	focus	1
+72113	Focus	1
 72114	aventure	1
 72114	dinasolar	2
 72114	bénéficie	1
@@ -26802,7 +26942,7 @@
 72114	mener	1
 72114	celui	1
 72114	leader	1
-72114	focus	1
+72114	Focus	1
 72115	entrer	1
 72115	cea	1
 72115	début	1
@@ -27024,7 +27164,7 @@
 72115	chimist	1
 72115	pharmacologu	1
 72115	promesse	1
-72115	focus	1
+72115	Focus	1
 72116	appellation	1
 72116	radeal	4
 72116	lipidique	3
@@ -27223,7 +27363,7 @@
 72116	radeau	1
 72116	prometteur	1
 72116	secteur	1
-72116	focus	1
+72116	Focus	1
 72117	autrefoi	1
 72117	nommée	1
 72117	fraise	1
@@ -27341,7 +27481,9 @@
 72117	amélioration	1
 72117	processus	1
 72117	vers	1
+72117	au	1
 72117	coeur	1
+72117	de	1
 72118	créée	1
 72118	basée	1
 72118	marseill	1
@@ -27377,7 +27519,7 @@
 72118	trouver	2
 72118	commercialiser	1
 72118	molécule	1
-72118	ultra	2
+72118	ultra	1
 72118	pur	2
 72118	commencer	1
 72118	analyser	1
@@ -27445,7 +27587,10 @@
 72118	bleu	1
 72118	méthylène	1
 72118	molécul	1
+72118	ultrer	1
+72118	au	1
 72118	coeur	1
+72118	de	1
 72118	région	1
 72119	placer	2
 72119	dispositif	1
@@ -27459,7 +27604,7 @@
 72119	mouvement	1
 72119	rotor	3
 72119	contrôler	1
-72119	sens	2
+72119	sens	3
 72119	rotation	3
 72119	suffire	1
 72119	délivrer	2
@@ -27536,8 +27681,9 @@
 72119	américain	1
 72119	ohio	1
 72119	contrôle	1
-72119	sen	1
+72119	en	1
 72119	direct	1
+72119	de	1
 72119	laboratoire	1
 72120	février	1
 72120	tenir	1
@@ -27588,7 +27734,7 @@
 72120	distinguer	1
 72120	congrès	1
 72120	conditionnement	1
-72120	evénemer	1
+72120	evénement	1
 72121	février	1
 72121	carnot	1
 72121	organiser	2
@@ -27966,7 +28112,7 @@
 72392	positionn	1
 72392	prometteur	2
 72392	marcher	1
-72392	focus	1
+72392	Focus	1
 72393	avril	1
 72393	tiendra	1
 72393	deuxième	1
@@ -28140,7 +28286,7 @@
 72393	bureau	2
 72393	jumelage	1
 72393	réunir	1
-72393	focus	1
+72393	Focus	1
 72394	an	2
 72394	passer	2
 72394	travailler	5
@@ -28393,7 +28539,7 @@
 72394	parenthèse	1
 72394	industriel	1
 72394	vie	1
-72394	focus	1
+72394	Focus	1
 72395	plan	1
 72395	pm	3
 72395	région	2
@@ -28515,6 +28661,8 @@
 72395	promotier	1
 72395	être	1
 72395	rhônalpine	1
+72395	au	1
+72395	de	1
 72396	novembre	4
 72396	visiteur	1
 72396	étranger	1
@@ -28746,6 +28894,7 @@
 72396	mettre	1
 72396	vôtre	1
 72396	sien	1
+72396	de	2
 72396	côté	1
 72397	intérêt	1
 72397	mener	1
@@ -28904,8 +29053,10 @@
 72397	nanotubes	1
 72397	exploiter	1
 72397	mieux	1
-72397	estuaire	1
+72397	estuairer	1
+72397	en	1
 72397	direct	1
+72397	de	1
 72397	laboratoire	1
 72398	créée	1
 72398	ecole	9
@@ -29020,7 +29171,7 @@
 72398	favoriser	1
 72398	échange	1
 72398	synergie	1
-72398	enseignement	2
+72398	enseignement	1
 72398	proposer	1
 72398	thématique	1
 72398	souligner	1
@@ -29028,7 +29179,8 @@
 72398	demay	1
 72398	général	1
 72398	repartir	1
-72398	horizon	1
+72398	Horizon	1
+72398	Enseignement	1
 72399	avril	1
 72399	filtration	2
 72399	technique	4
@@ -29142,7 +29294,7 @@
 72400	jean	1
 72400	michel	1
 72400	lamur	1
-72400	evénemer	1
+72400	evénement	1
 72401	cinéma	1
 72401	télévision	1
 72401	ordinateur	1
@@ -29233,10 +29385,10 @@
 72401	responsable	1
 72401	politique	1
 72401	public	1
-72401	lire	1
+72401	lire	2
 72401	relire	1
 72401	méditer	1
-72401	lir	1
+72401	à	1
 72629	je	1
 72629	vouloir	1
 72629	vivre	1
@@ -29531,7 +29683,7 @@
 72629	retour	1
 72629	émergence	1
 72629	original	1
-72629	focus	1
+72629	Focus	1
 72630	fondamental	1
 72630	issu	1
 72630	receler	1
@@ -29804,7 +29956,7 @@
 72630	guis	1
 72630	conclusion	1
 72630	science	1
-72630	focus	1
+72630	Focus	1
 72631	réellement	1
 72631	parler	2
 72631	goût	7
@@ -30028,7 +30180,7 @@
 72631	umr	1
 72631	inserm	1
 72631	bourgogne	1
-72631	focus	1
+72631	Focus	1
 72632	paysandisia	2
 72632	archon	2
 72632	vous	1
@@ -30144,6 +30296,7 @@
 72632	découverte	1
 72632	lutter	1
 72632	actualité	1
+72632	innovation	1
 72633	janvier	1
 72633	édition	1
 72633	prix	2
@@ -30183,7 +30336,7 @@
 72633	interactif	1
 72633	précison	1
 72633	nécessité	1
-72633	innovation	1
+72633	innovation	2
 72633	conduire	1
 72633	dépôt	3
 72633	brevet	1
@@ -30545,6 +30698,7 @@
 72634	esiec	1
 72634	reim	1
 72634	bientôt	1
+72634	de	2
 72634	côté	1
 72635	dispositif	1
 72635	réseau	1
@@ -30659,7 +30813,9 @@
 72635	concevoir	1
 72635	vers	1
 72635	émergence	1
+72635	en	1
 72635	direct	1
+72635	de	1
 72635	laboratoire	1
 72636	je	1
 72636	travailler	3
@@ -30732,8 +30888,8 @@
 72636	saint	1
 72636	nazair	1
 72636	ajusteus	1
-72636	horizon	1
-72636	enseignement	1
+72636	Horizon	1
+72636	Enseignement	1
 72637	créée	1
 72637	agroparistech	5
 72637	durer	1
@@ -30774,7 +30930,7 @@
 72637	accroître	1
 72637	durabilité	1
 72637	établissement	1
-72637	enseignement	3
+72637	enseignement	2
 72637	supérieur	1
 72637	entendre	1
 72637	placer	1
@@ -30843,7 +30999,8 @@
 72637	création	1
 72637	valeur	1
 72637	estime	1
-72637	horizon	1
+72637	Horizon	1
+72637	Enseignement	1
 72932	celui	1
 72932	avoir	5
 72932	chance	1
@@ -31245,7 +31402,7 @@
 72932	poursuit	1
 72932	retour	1
 72932	carrière	1
-72932	focus	1
+72932	Focus	1
 72933	taxibot	5
 72933	remarquable	1
 72933	français	1
@@ -31482,7 +31639,7 @@
 72933	déchiffrer	1
 72933	rapport	1
 72933	espace	1
-72933	focus	1
+72933	Focus	1
 72934	taille	1
 72934	accélérateur	3
 72934	particule	1
@@ -31704,6 +31861,7 @@
 72934	passer	1
 72934	émergence	1
 72934	actualité	1
+72934	innovation	1
 72935	selon	1
 72935	estimation	1
 72935	récent	1
@@ -31843,6 +32001,7 @@
 72935	progression	1
 72935	vers	1
 72935	actualité	1
+72935	innovation	1
 72936	voyage	1
 72936	officiel	1
 72936	maroc	2
@@ -31904,7 +32063,7 @@
 72936	objet	1
 72936	mettre	1
 72936	établissement	1
-72936	enseignement	2
+72936	enseignement	1
 72936	supérieur	1
 72936	intégrer	1
 72936	plan	1
@@ -31929,7 +32088,8 @@
 72936	lancement	1
 72936	pilotage	1
 72936	innovant	1
-72936	horizon	1
+72936	Horizon	1
+72936	Enseignement	1
 72937	juin	1
 72937	arcachon	1
 72937	dérouler	1
@@ -32034,7 +32194,7 @@
 72937	manquer	1
 72937	celui	1
 72937	impliquer	1
-72937	evénement	1
+72937	Evénement	1
 72938	mai	1
 72938	tour	2
 72938	excellence	2
@@ -32319,7 +32479,7 @@
 72939	observer	1
 72939	patrice	1
 72939	innovative	1
-72939	evénemer	1
+72939	evénement	1
 72940	énergie	4
 72940	quel	2
 72940	grand	1
@@ -32446,6 +32606,7 @@
 72940	chercher	1
 72940	forger	1
 72940	objectif	1
+72940	à	1
 73182	actuel	3
 73182	français	2
 73182	annonce	1
@@ -32755,7 +32916,7 @@
 73182	spécialiste	1
 73182	certain	1
 73182	humour	1
-73182	focus	1
+73182	Focus	1
 73183	jour	1
 73183	bateal	1
 73183	réaliser	1
@@ -32990,7 +33151,7 @@
 73183	cap	1
 73183	récolt	1
 73183	unique	1
-73183	focus	1
+73183	Focus	1
 73184	janvier	4
 73184	neuropsychopharmacology	2
 73184	revue	1
@@ -33277,7 +33438,7 @@
 73184	axer	1
 73184	épidémiologie	1
 73184	principalement	1
-73184	focus	1
+73184	Focus	1
 73185	commencer	2
 73185	lecture	1
 73185	ouvrager	1
@@ -33558,7 +33719,7 @@
 73185	grand	1
 73185	université	1
 73185	enrichissant	1
-73185	focus	1
+73185	Focus	1
 73186	installation	1
 73186	permettre	2
 73186	détecter	1
@@ -33652,6 +33813,7 @@
 73186	fondamental	1
 73186	français	1
 73186	actualité	1
+73186	innovation	1
 73187	fonder	1
 73187	basée	1
 73187	mulhouse	1
@@ -33752,7 +33914,8 @@
 73187	licence	1
 73187	exploitation	1
 73187	contrôler	1
-73187	actualiter	1
+73187	actualité	1
+73187	innovation	1
 73188	question	1
 73188	physique	1
 73188	matière	1
@@ -33821,7 +33984,9 @@
 73188	efficacité	1
 73188	lumineux	1
 73188	pourquoi	1
+73188	en	1
 73188	direct	1
+73188	de	1
 73188	laboratoire	1
 73189	technique	1
 73189	imageri	2
@@ -33914,7 +34079,9 @@
 73189	science	1
 73189	phea	1
 73189	sonder	1
+73189	en	1
 73189	direct	1
+73189	de	1
 73189	laboratoire	1
 73190	juin	2
 73190	esiee	2
@@ -34025,7 +34192,7 @@
 73190	nano	1
 73190	micro	1
 73190	technology	1
-73190	evénemer	1
+73190	evénement	1
 73430	dangereux	1
 73430	emblé	1
 73430	bruno	7
@@ -34300,7 +34467,7 @@
 73430	davantage	1
 73430	petit	1
 73430	monte	1
-73430	focus	1
+73430	Focus	1
 73431	valise	5
 73431	pédagogique	5
 73431	devoir	1
@@ -34598,7 +34765,7 @@
 73431	retour	1
 73431	équivalent	1
 73431	étonnant	1
-73431	focus	1
+73431	Focus	1
 73432	tractus	2
 73432	digestif	2
 73432	renferm	2
@@ -34863,7 +35030,7 @@
 73432	nécessaire	1
 73432	paraître	1
 73432	dérisoire	1
-73432	focus	1
+73432	Focus	1
 73433	jour	1
 73433	environ	1
 73433	espèce	1
@@ -34953,6 +35120,7 @@
 73433	énergie	1
 73433	inauguration	1
 73433	actualité	1
+73433	innovation	1
 73434	vingt	2
 73434	août	1
 73434	être	4
@@ -35203,7 +35371,9 @@
 73434	midi	1
 73434	pyréner	1
 73434	capital	1
+73434	au	1
 73434	coeur	1
+73434	de	1
 73434	région	1
 73435	juin	1
 73435	lyon	2
@@ -35311,7 +35481,9 @@
 73435	aqueux	1
 73435	mettre	1
 73435	fin	1
+73435	au	1
 73435	coeur	1
+73435	de	1
 73436	utiliser	2
 73436	molécule	9
 73436	organique	3
@@ -35430,7 +35602,9 @@
 73436	catalyseur	1
 73436	coûteux	1
 73436	alternative	1
+73436	en	1
 73436	direct	1
+73436	de	1
 73437	juin	1
 73437	e	3
 73437	tribart	3
@@ -35537,7 +35711,7 @@
 73438	investisseur	1
 73438	concourir	1
 73438	prix	1
-73438	evénemer	1
+73438	evénement	1
 73683	naviguer	2
 73683	possible	1
 73683	finir	2
@@ -35947,7 +36121,7 @@
 73683	pédagogique	1
 73683	formidable	1
 73683	aventur	1
-73683	focus	1
+73683	Focus	1
 73684	bas	1
 73684	rendement	4
 73684	devoir	3
@@ -36306,7 +36480,7 @@
 73684	continent	1
 73684	africain	1
 73684	regarder	1
-73684	focus	1
+73684	Focus	1
 73685	consister	1
 73685	mesurer	1
 73685	perception	1
@@ -36520,7 +36694,7 @@
 73685	démarrage	1
 73685	répondre	1
 73685	croissant	1
-73685	focus	1
+73685	Focus	1
 73686	créée	1
 73686	pathoquest	5
 73686	spin	1
@@ -36602,6 +36776,7 @@
 73686	historique	1
 73686	réaliser	1
 73686	actualité	1
+73686	innovation	1
 73687	annonce	1
 73687	création	1
 73687	aerocampus	7
@@ -36732,6 +36907,7 @@
 73687	labelliser	1
 73687	campus	1
 73687	actualité	1
+73687	innovation	1
 73688	détecter	1
 73688	passage	2
 73688	neutrino	1
@@ -36847,7 +37023,9 @@
 73688	plo	1
 73688	one	1
 73688	via	1
+73688	en	1
 73688	direct	1
+73688	de	1
 73688	laboratoire	1
 73689	octobre	1
 73689	alpespace	1
@@ -36954,7 +37132,7 @@
 73690	expérience	1
 73690	action	1
 73690	partenarial	1
-73690	evénemer	1
+73690	evénement	1
 73691	octobre	1
 73691	toulous	1
 73691	cancer	5
@@ -37049,7 +37227,7 @@
 73875	activité	7
 73875	créer	1
 73875	voilà	1
-73875	cinquante	2
+73875	cinquante	3
 73875	filiale	2
 73875	gtm	2
 73875	orer	2
@@ -37290,8 +37468,7 @@
 73875	stratégie	1
 73875	prochain	1
 73875	fête	1
-73875	cinquant	1
-73875	focus	1
+73875	Focus	1
 73876	learninglab	9
 73876	inscrit	1
 73876	vision	1
@@ -37586,7 +37763,7 @@
 73876	prometteur	1
 73876	riche	1
 73876	imaginer	1
-73876	focus	1
+73876	Focus	1
 73877	bientôt	1
 73877	heure	1
 73877	vendange	1
@@ -37907,7 +38084,7 @@
 73877	modernité	1
 73877	avère	1
 73877	nécessaire	1
-73877	focus	1
+73877	Focus	1
 73878	animal	3
 73878	connaître	2
 73878	principalement	2
@@ -38064,7 +38241,9 @@
 73878	président	1
 73878	jeune	1
 73878	partir	1
+73878	au	1
 73878	coeur	1
+73878	de	1
 73878	région	1
 73879	co	1
 73879	labellisé	2
@@ -38308,6 +38487,7 @@
 73879	efficace	1
 73879	performant	1
 73879	association	1
+73879	de	2
 73879	côté	1
 73880	septembre	1
 73880	edimbourg	1
@@ -38436,6 +38616,7 @@
 73880	fleuron	1
 73880	observation	1
 73880	actualité	1
+73880	innovation	1
 73881	septembre	1
 73881	megève	1
 73881	tenir	1
@@ -38481,7 +38662,7 @@
 73881	approch	1
 73881	géographique	1
 73881	privilégier	1
-73881	evénemer	1
+73881	evénement	1
 73882	octobre	1
 73882	bordeaux	2
 73882	tenir	1
@@ -38543,7 +38724,7 @@
 73882	social	1
 73882	égalité	1
 73882	chance	1
-73882	evénemer	1
+73882	evénement	1
 73883	octobre	1
 73883	cachan	1
 73883	près	1
@@ -38669,7 +38850,7 @@
 73884	demain	1
 73884	hybride	1
 73884	électrique	1
-73884	evénemer	1
+73884	evénement	1
 74167	challenge	2
 74167	stratégique	1
 74167	technologique	1
@@ -38999,7 +39180,7 @@
 74167	surtout	1
 74167	tendance	1
 74167	croire	1
-74167	focus	1
+74167	Focus	1
 74168	choix	1
 74168	finalement	1
 74168	porter	1
@@ -39320,7 +39501,7 @@
 74168	tester	1
 74168	capital	1
 74168	prochain	1
-74168	focus	1
+74168	Focus	1
 74169	nom	1
 74169	libre	1
 74169	échange	1
@@ -39544,7 +39725,7 @@
 74169	conclut	1
 74169	confier	1
 74169	vers	1
-74169	focus	1
+74169	Focus	1
 74170	janvier	1
 74170	vaimo	5
 74170	concevoir	1
@@ -39652,6 +39833,7 @@
 74170	finlande	1
 74170	coupe	1
 74170	actualité	1
+74170	innovation	1
 74171	simple	1
 74171	rapide	1
 74171	invasive	1
@@ -39764,12 +39946,13 @@
 74171	enregistre	1
 74171	celui	1
 74171	actualité	1
+74171	innovation	1
 74172	juste	1
 74172	aboutissement	1
 74172	entreprendre	1
 74172	mois	1
 74172	acteur	1
-74172	il	4
+74172	il	5
 74172	christophe	1
 74172	breuillet	1
 74172	résumer	1
@@ -39878,7 +40061,7 @@
 74172	favorablement	1
 74172	conseil	2
 74172	régional	1
-74172	ile	2
+74172	ile	1
 74172	appui	1
 74172	général	3
 74172	marn	1
@@ -39920,6 +40103,7 @@
 74172	falconnier	1
 74172	sénagral	1
 74172	débarqu	1
+74172	de	2
 74172	côté	1
 74172	pôle	1
 74173	second	2
@@ -40037,7 +40221,9 @@
 74173	propagation	1
 74173	anormal	1
 74173	cerveau	1
+74173	en	1
 74173	direct	1
+74173	de	1
 74173	laboratoire	1
 74174	décembre	1
 74174	observatoir	1
@@ -40096,7 +40282,7 @@
 74174	acteur	1
 74174	filièr	1
 74174	prometteur	1
-74174	evénemer	1
+74174	evénement	1
 74175	novembre	1
 74175	nante	3
 74175	ecole	2
@@ -40160,7 +40346,7 @@
 74175	symboliquement	1
 74175	copenhague	1
 74175	accueillir	1
-74175	evénemer	1
+74175	evénement	1
 74176	décembre	1
 74176	bordeaux	1
 74176	conseil	1
@@ -40239,7 +40425,7 @@
 74176	comment	1
 74176	vivre	1
 74176	demain	1
-74176	evénemer	1
+74176	evénement	1
 74449	novembre	2
 74449	goût	1
 74449	alimentation	7
@@ -40477,7 +40663,7 @@
 74449	joyeux	1
 74449	consommé	1
 74449	élevé	1
-74449	focus	1
+74449	Focus	1
 74450	filière	1
 74450	train	1
 74450	émerger	1
@@ -40817,7 +41003,7 @@
 74450	croissance	1
 74450	objectif	1
 74450	courir	1
-74450	focus	1
+74450	Focus	1
 74451	start	1
 74451	up	1
 74451	créée	1
@@ -40946,7 +41132,8 @@
 74451	imageri	1
 74451	haute	1
 74451	mois	1
-74451	actualiter	1
+74451	actualité	1
+74451	innovation	1
 74452	découvrir	1
 74452	traitement	4
 74452	analyse	1
@@ -41033,6 +41220,7 @@
 74452	booster	1
 74452	bio	1
 74452	actualité	1
+74452	innovation	1
 74453	simulateur	7
 74453	informatique	3
 74453	mécanisme	3
@@ -41182,6 +41370,7 @@
 74453	point	1
 74453	affection	1
 74453	actualité	1
+74453	innovation	1
 74454	implantation	3
 74454	larynx	9
 74454	artificiel	4
@@ -41299,6 +41488,7 @@
 74454	homme	1
 74454	mondial	1
 74454	actualité	1
+74454	innovation	1
 74455	gain	1
 74455	reproductibilité	1
 74455	élimination	1
@@ -41515,6 +41705,8 @@
 74455	solution	1
 74455	adhésion	1
 74455	dépistage	1
+74455	au	1
+74455	de	1
 74455	région	1
 74456	janvier	1
 74456	tiendra	1
@@ -41584,7 +41776,7 @@
 74456	président	1
 74456	responsable	1
 74456	exposition	1
-74456	evénemer	1
+74456	evénement	1
 74457	petit	3
 74457	livre	5
 74457	utile	3
@@ -41659,7 +41851,7 @@
 74457	attention	1
 74457	stigmatiser	1
 74457	connaître	1
-74457	lire	1
+74457	lire	2
 74457	urgence	1
 74457	biodiversité	1
 74457	déforestation	1
@@ -41723,7 +41915,7 @@
 74457	champ	1
 74457	ajout	1
 74457	enjeu	1
-74457	lir	1
+74457	avoir	1
 74744	calcul	4
 74744	ccrt	7
 74744	ceer	4
@@ -41916,12 +42108,12 @@
 74744	intensif	1
 74744	déclarer	1
 74744	présente	1
-74744	focus	1
+74744	Focus	1
 74745	quand	2
 74745	ccrt	4
 74745	dire	2
 74745	calcul	6
-74745	ceer	2
+74745	ceer	1
 74745	créer	2
 74745	dix	1
 74745	groupe	4
@@ -42099,7 +42291,8 @@
 74745	acceptable	1
 74745	observer	1
 74745	heure	1
-74745	focus	1
+74745	cea	1
+74745	Focus	1
 74746	décembre	2
 74746	tenir	1
 74746	silver	10
@@ -42377,7 +42570,7 @@
 74746	domicil	1
 74746	engager	1
 74746	résolumer	1
-74746	focus	1
+74746	Focus	1
 74747	nanotechnologie	3
 74747	faire	1
 74747	parler	1
@@ -42433,6 +42626,7 @@
 74747	catalogu	1
 74747	opportunité	1
 74747	actualité	1
+74747	innovation	1
 74748	janvier	1
 74748	labège	1
 74748	quinzaine	1
@@ -42581,7 +42775,9 @@
 74748	produit	1
 74748	aggroalimentaire	1
 74748	rencontre	1
+74748	au	1
 74748	coeur	1
+74748	de	1
 74749	pme	1
 74749	créée	1
 74749	eric	4
@@ -42591,7 +42787,7 @@
 74749	issu	1
 74749	européen	2
 74749	nu	3
-74749	ag	3
+74749	ag	2
 74749	financer	1
 74749	hauteur	1
 74749	million	1
@@ -42815,6 +43011,8 @@
 74749	singapour	1
 74749	voir	1
 74749	vieillissemer	1
+74749	age	1
+74749	de	2
 74749	pôle	1
 74750	type	1
 74750	gel	8
@@ -42947,7 +43145,9 @@
 74750	chimique	1
 74750	tissu	1
 74750	biologique	1
+74750	en	1
 74750	direct	1
+74750	de	1
 74750	laboratoire	1
 74751	concerner	1
 74751	navigation	1
@@ -43259,6 +43459,7 @@
 74752	rencontre	1
 74752	capital	1
 74752	demain	1
+74752	a	1
 74752	lire	1
 75063	aller	1
 75063	surtout	1
@@ -43497,7 +43698,7 @@
 75063	bientôt	1
 75063	collaborateur	1
 75063	image	1
-75063	focus	1
+75063	Focus	1
 75064	salle	3
 75064	réalité	9
 75064	virtuel	10
@@ -43695,7 +43896,7 @@
 75064	test	1
 75064	spécifique	1
 75064	parmi	1
-75064	focus	1
+75064	Focus	1
 75065	carcinome	4
 75065	hépatocellulaire	4
 75065	cancer	7
@@ -43937,7 +44138,7 @@
 75065	randomiser	1
 75065	démarrer	1
 75065	significatif	1
-75065	focus	1
+75065	Focus	1
 75066	piloter	1
 75066	agence	1
 75066	régional	1
@@ -44106,6 +44307,8 @@
 75066	fusia	1
 75066	stratégie	1
 75066	impression	1
+75066	au	1
+75066	de	1
 75067	décembre	1
 75067	aquitaine	4
 75067	science	3
@@ -44289,7 +44492,9 @@
 75067	homogène	1
 75067	contrôler	1
 75067	quatre	1
+75067	au	1
 75067	coeur	1
+75067	de	1
 75067	région	1
 75068	dédié	1
 75068	manufacturing	2
@@ -44420,6 +44625,8 @@
 75068	voie	1
 75068	pérennisation	1
 75068	produire	1
+75068	au	1
+75068	de	1
 75068	région	1
 75069	européen	3
 75069	pcrd	1
@@ -44634,6 +44841,7 @@
 75069	uni	1
 75069	suisse	1
 75069	but	1
+75069	de	2
 75069	côté	1
 75070	utiliser	2
 75070	unique	1
@@ -44741,7 +44949,9 @@
 75070	molécule	1
 75070	molécul	1
 75070	concevoir	1
+75070	en	1
 75070	direct	1
+75070	de	1
 75070	laboratoire	1
 75071	février	1
 75071	esiee	3
@@ -44847,7 +45057,7 @@
 75071	prochain	1
 75071	cci	1
 75071	ile	1
-75071	evénemer	1
+75071	evénement	1
 75457	tel	1
 75457	démarche	1
 75457	demande	1
@@ -45052,7 +45262,7 @@
 75457	vise	1
 75457	reconstruir	1
 75457	innover	1
-75457	focus	1
+75457	Focus	1
 75458	quand	1
 75458	sécheresse	2
 75458	trop	2
@@ -45535,7 +45745,7 @@
 75458	dirigée	1
 75458	anthropologue	1
 75458	planète	1
-75458	focus	1
+75458	Focus	1
 75459	lipoprotéine	1
 75459	mot	2
 75459	duquel	1
@@ -45759,7 +45969,7 @@
 75459	loin	1
 75459	livrer	1
 75459	secret	1
-75459	focus	1
+75459	Focus	1
 75460	co	1
 75460	financer	1
 75460	systerra	1
@@ -45861,7 +46071,7 @@
 75460	robuste	1
 75460	coûteux	1
 75460	actualité	1
-75460	innovation	1
+75460	Innovations	1
 75461	groupe	3
 75461	spécialisé	3
 75461	chimie	2
@@ -45961,7 +46171,9 @@
 75461	ça	1
 75461	bouge	1
 75461	côté	1
+75461	au	1
 75461	coeur	1
+75461	de	1
 75461	région	1
 75462	avril	1
 75462	prochain	2
@@ -46090,6 +46302,7 @@
 75462	adapter	1
 75462	demande	1
 75462	état	1
+75462	de	2
 75462	côté	1
 75462	pôle	1
 75463	étude	4
@@ -46199,7 +46412,9 @@
 75463	installation	1
 75463	forme	1
 75463	modification	1
+75463	en	1
 75463	direct	1
+75463	de	1
 75464	durer	1
 75464	colloque	2
 75464	participant	1
@@ -46292,7 +46507,7 @@
 75464	filièr	1
 75464	élaboration	1
 75464	deformation	1
-75464	evénemer	1
+75464	evénement	1
 75465	biovision	4
 75465	dérouler	1
 75465	édition	1
@@ -46363,7 +46578,7 @@
 75465	comment	1
 75465	détecter	1
 75465	financer	1
-75465	evénemer	1
+75465	evénement	1
 75466	mai	1
 75466	grenobl	2
 75466	dérouler	1
@@ -46622,7 +46837,7 @@
 75788	day	1
 75788	organiser	1
 75788	unique	1
-75788	focus	1
+75788	Focus	1
 75789	capable	3
 75789	déployer	1
 75789	stratrobus	1
@@ -46856,7 +47071,7 @@
 75789	opérer	1
 75789	durée	1
 75789	interruption	1
-75789	focus	1
+75789	Focus	1
 75790	doctorat	1
 75790	poch	1
 75790	stage	1
@@ -47057,7 +47272,7 @@
 75790	neuroscience	1
 75790	dijonner	1
 75790	designer	1
-75790	focus	1
+75790	Focus	1
 75791	parvenir	1
 75791	mettre	1
 75791	point	1
@@ -47131,6 +47346,7 @@
 75791	reproduire	1
 75791	geste	1
 75791	actualité	1
+75791	innovation	1
 75792	savoir	3
 75792	expertise	1
 75792	favorable	1
@@ -47382,7 +47598,9 @@
 75792	échelle	1
 75792	pilot	1
 75792	objet	1
+75792	au	1
 75792	coeur	1
+75792	de	1
 75792	région	1
 75793	idée	4
 75793	bâtir	4
@@ -47596,6 +47814,7 @@
 75793	clinique	1
 75793	relèv	1
 75793	défi	1
+75793	de	2
 75793	côté	1
 75793	pôle	1
 75794	matière	1
@@ -47746,7 +47965,9 @@
 75794	peupler	1
 75794	quotidien	1
 75794	bientôt	1
+75794	en	1
 75794	direct	1
+75794	de	1
 75794	laboratoire	1
 75795	événement	1
 75795	rare	1
@@ -47948,7 +48169,7 @@
 75796	laboratoire	1
 75796	organisme	1
 75796	public	1
-75796	evénemer	1
+75796	evénement	1
 75797	car	1
 75797	matérial	1
 75797	produire	2
@@ -48021,7 +48242,7 @@
 75797	appréhender	1
 75797	domaine	1
 75797	divers	1
-75797	evénemer	1
+75797	evénement	1
 76206	pénétrer	1
 76206	univers	1
 76206	vin	11
@@ -48228,7 +48449,7 @@
 76206	producteur	1
 76206	part	1
 76206	psychologique	1
-76206	focus	1
+76206	Focus	1
 76207	jeune	1
 76207	start	2
 76207	up	2
@@ -48413,7 +48634,7 @@
 76207	criminalité	1
 76207	durcit	1
 76207	notre	1
-76207	focus	1
+76207	Focus	1
 76208	avril	1
 76208	dix	1
 76208	entrepreneur	1
@@ -48587,6 +48808,7 @@
 76208	société	1
 76208	lauréat	1
 76208	actualité	1
+76208	innovation	1
 76209	précison	1
 76209	étude	3
 76209	cinq	1
@@ -48748,6 +48970,7 @@
 76209	assiette	1
 76209	orée	1
 76209	décennie	1
+76209	de	2
 76209	pôle	1
 76210	mener	1
 76210	synthès	1
@@ -48905,7 +49128,9 @@
 76210	rendre	1
 76210	difficile	1
 76210	artificiel	1
+76210	en	1
 76210	direct	1
+76210	de	1
 76210	laboratoire	1
 76211	ecole	4
 76211	central	3
@@ -49008,7 +49233,7 @@
 76211	concurrent	1
 76211	désormais	1
 76211	horizon	1
-76211	formation	1
+76211	Formation	1
 76211	enseignement	1
 76212	chacun	1
 76212	engager	1
@@ -49074,7 +49299,7 @@
 76212	sujet	1
 76212	proposer	1
 76212	thématique	1
-76212	evénemer	1
+76212	evénement	1
 76213	rupture	3
 76213	mot	1
 76213	fort	1
@@ -49340,7 +49565,8 @@
 76213	contenu	2
 76213	assiette	1
 76213	considérablement	1
-76213	lir	1
+76213	avoir	1
+76213	lire	1
 76507	restauration	1
 76507	gestion	5
 76507	hôpital	7
@@ -49536,7 +49762,7 @@
 76507	apporter	1
 76507	réponse	1
 76507	mangeur	1
-76507	focus	1
+76507	Focus	1
 76508	celui	2
 76508	générer	1
 76508	profil	5
@@ -49786,7 +50012,7 @@
 76508	logicielles	1
 76508	opte	1
 76508	plutôt	1
-76508	focus	1
+76508	Focus	1
 76509	aventure	1
 76509	humain	1
 76509	indique	1
@@ -49932,8 +50158,8 @@
 76509	recevoir	1
 76509	prix	1
 76509	glucider	1
-76509	actualité	1
-76509	innovation	1
+76509	Actualités	1
+76509	Innovations	1
 76510	ferroviaire	2
 76510	vol	4
 76510	câble	2
@@ -50081,8 +50307,8 @@
 76510	réseal	1
 76510	câblé	1
 76510	lever	1
-76510	actualiter	1
-76510	innovation	1
+76510	Actualités	1
+76510	Innovations	1
 76511	certain	2
 76511	m	1
 76511	accuser	1
@@ -50415,6 +50641,8 @@
 76511	chef	1
 76511	equilibre	1
 76511	promesse	1
+76511	au	1
+76511	de	1
 76511	région	1
 76512	néovin	1
 76512	appelle	1
@@ -50518,7 +50746,9 @@
 76512	concevoir	1
 76512	destiner	1
 76512	premier	1
+76512	au	1
 76512	coeur	1
+76512	de	1
 76513	produit	2
 76513	prochain	2
 76513	génération	2
@@ -50724,7 +50954,7 @@
 76514	outil	1
 76514	dédier	1
 76514	source	1
-76514	evénemer	1
+76514	evénement	1
 76515	événement	1
 76515	fort	1
 76515	congrès	1
@@ -50893,4 +51123,4 @@
 76516	journer	2
 76516	international	2
 76516	extraire	2
-76516	evénemer	1
+76516	evénement	1

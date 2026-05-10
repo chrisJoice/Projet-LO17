@@ -265,7 +265,7 @@ def construire_corpusfinal(fichier_corpusfiltré , fichier_newantidictionnaire ,
     documents = soup.find_all("document")
 
     for doc in documents:
-        champs = ["titre", "texte","rubrique" , "legendeImage"]
+        champs = ["titre", "texte", "legendeImage"]
 
         for champ in champs:
             balise = doc.find(champ)
@@ -359,8 +359,8 @@ def execution() :
     vocabulairetd2.coefficients_idft(fichier,output_idf)
     vocabulairetd2.coefficients_tf_idft(output_idf, output_tf,output_tfxidf )
     new_antidictionnaire = DATA/"new_antidictionnaire.txt"
-    seuil_min = 0.75
-    seuil_max = 25
+    seuil_min = 0.8
+    seuil_max = 20
     seuil_min, seuil_max = vocabulairetd2.determination_seuils(output_tfxidf, seuil_min, seuil_max, True)
     vocabulairetd2.anti_dictionnaire(output_tfxidf, seuil_min, seuil_max, new_antidictionnaire)
     corpus_filtrer = OUTPUT/"corpus_filtrer.xml"

@@ -16,6 +16,7 @@ from pathlib import Path
 from nltk.stem import SnowballStemmer
 import spacy
 import correction_requetetd4
+from inverse import NORMALISATION_RUBRIQUES   
 
 
 # =========================
@@ -74,7 +75,8 @@ def extraction_metadonnees(requete):
     # RUBRIQUE
     pattern_rubrique = r"(focus|horizons enseignement|en direct des laboratoires|a lire|actualité innovations|actualités innovations|événement)"
     resultat_rubrique = re.findall(pattern_rubrique, requete, re.IGNORECASE)
-    metadonnees['rubrique'] = resultat_rubrique[0] if resultat_rubrique else ""
+    rubrique_brute = resultat_rubrique[0].strip().lower() if resultat_rubrique else ""
+    metadonnees['rubrique'] = NORMALISATION_RUBRIQUES .get(rubrique_brute, rubrique_brute)
 
     # STRUCTUREL
     pattern_structurel = r"(avec des images|sans image|contenant le mot \w+)"

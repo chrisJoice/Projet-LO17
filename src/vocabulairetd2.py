@@ -231,7 +231,7 @@ def corpus_filtrer(corpus,antidictionnaire,output_file):
     for doc in documents:
 
         # Liste des balises à nettoyer
-        champs = ["texte", "titre" , "rubrique" , "legendeImage"]
+        champs = ["texte", "titre" , "legendeImage"]
 
         for champ in champs:
 
@@ -327,7 +327,7 @@ def execution():
     coefficients_idft(fichier,output_idf)
     coefficients_tf_idft(output_idf, output_tf, output_tfxidf )
     seuil_min,seuil_max = 0.75, 25 
-    seuil_min, seuil_max = determination_seuils(output_tfxidf, seuil_min, seuil_max, True)
+    # seuil_min, seuil_max = determination_seuils(output_tfxidf, seuil_min, seuil_max, True)
     anti_dictionnaire(output_tfxidf,seuil_min, seuil_max,anti_dic  )
     corpus_filtrer(chemin, anti_dic, c_filtrer)
 

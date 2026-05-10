@@ -28,6 +28,14 @@ BULLETINS = BASE_DIR / "BULLETINS"
 DATA = BASE_DIR / "data"
 OUTPUT = BASE_DIR / "output"
 
+NORMALISATION_RUBRIQUES  = {
+    "actualité innovation"  : "actualités innovations",
+    "actualités innovation" : "actualités innovations",
+    "horizon enseignement"  : "horizons enseignement",
+    "horizon formation"     : "horizons formation",
+    "en direct des labos"   : "en direct des laboratoires",
+}
+
 
 def export_index(dictionnaire, fichier):
 
@@ -75,6 +83,44 @@ def fichier_inverse(corpus, balise):
     
     except TypeError as e :
         print("erreur : ", e)
+        
+
+def fichier_inverse_rubrique(corpus):
+    try:
+        with open(corpus, "r", encoding="UTF8") as f:
+            html = f.read()
+
+        soup = BeautifulSoup(html, 'html.parser')
+        dictionnaire_index = {}
+        corpus_tag = soup.corpus
+        all_documents = corpus_tag.find_all("document")
+
+        for doc in all_documents:
+            num_article = doc.article.get_text().strip()
+            balise_rubrique = doc.find("rubrique")
+
+            if not balise_rubrique:
+                continue
+
+            # on garde la rubrique comme une chaîne entière, pas de split()
+            rubrique = balise_rubrique.get_text().strip().lower()
+            rubrique = NORMALISATION_RUBRIQUES .get(rubrique, rubrique)  # normalise si connu, sinon garde tel quel
+
+            if not rubrique:
+                continue
+
+            if rubrique in dictionnaire_index:
+                if num_article not in dictionnaire_index[rubrique]:
+                    dictionnaire_index[rubrique][num_article] = 1
+            else:
+                dictionnaire_index[rubrique] = {num_article: 1}
+
+        fichier = DATA / "inverse_rubrique.txt"
+        export_index(dictionnaire_index, fichier)
+        print("inverse_rubrique.txt généré ✅")
+
+    except TypeError as e:
+        print("erreur : ", e)
 
 
 # ## test
@@ -82,5 +128,7 @@ def execution():
     corpus = OUTPUT /"corpus_final.xml"
     fichier_inverse(corpus, "date")
     fichier_inverse(corpus, "titre")
-    fichier_inverse(corpus, "rubrique")
+    fichier_inverse_rubrique(corpus)
     fichier_inverse(corpus, "texte")
+
+fichier_inverse_rubrique(OUTPUT /"corpus_final.xml")

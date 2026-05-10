@@ -16,6 +16,7 @@ from pathlib import Path
 from nltk.stem import SnowballStemmer
 import spacy
 import traitement_requete
+from inverse import NORMALISATION_RUBRIQUES  
 
 
 # =========================
